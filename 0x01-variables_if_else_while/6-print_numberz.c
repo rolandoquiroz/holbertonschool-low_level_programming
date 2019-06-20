@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-char num_char = 48;
+int num_char = 48;
 int i = 0;
 for (i = 0 ; i < 10 ; i++)
 {
