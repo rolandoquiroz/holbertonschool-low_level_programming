@@ -7,7 +7,7 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-{
+{/*main*/
 int i, j, k, l;
 for (i = 48 ; i < 58 ; i++)
 {
@@ -25,16 +25,14 @@ putchar(32);
 putchar(k);
 putchar(l);
 if ((i == 57) && (j == 56) && (k == 57) && (l == 57))
-{
 break;
-}
 putchar(44);
 putchar(32);
 }
-}
-}
-}
-}
+} /*for*/
+} /*for*/
+} /*for*/
+} /*for*/
 putchar('\n');
 return (0);
-}
+} /*main*/
