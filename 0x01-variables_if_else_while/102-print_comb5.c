@@ -1,5 +1,4 @@
 #include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
 /**
  * main - Entry point
@@ -17,7 +16,7 @@ for (k = 48 ; k < 58 ; k++)
 {
 for (l = 48 ; l < 58 ; l++)
 {
-if ((l > j) && (k >= i))
+if ((j < l) && (i <= k) && (j <= k))
 {
 putchar(i);
 putchar(j);
@@ -25,10 +24,12 @@ putchar(32);
 putchar(k);
 putchar(l);
 if ((i == 57) && (j == 56) && (k == 57) && (l == 57))
+{
 break;
+}
 putchar(44);
 putchar(32);
-}
+} /*if ((i == 57)...*/
 } /*for*/
 } /*for*/
 } /*for*/
