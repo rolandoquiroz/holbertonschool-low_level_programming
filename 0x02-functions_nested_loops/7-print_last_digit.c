@@ -17,7 +17,7 @@ else
 {
 my_ans = n;
 }
- my_answer = my_ans % 10;
+my_answer = my_ans % 10;
 _putchar('0' + my_answer);
 return (my_answer);
 }
