@@ -16,5 +16,5 @@ else
 n = n;
 }
 _putchar('0' + (n % 10));
-return (n);
+return (n % 10);
 }
