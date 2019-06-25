@@ -1,3 +1,9 @@
+/**
+* _isalpha - checks for alphabetic character
+* @c: Description of parameter x
+*
+* Return: An int
+*/
 int _isalpha(int c)
 {
 int my_answer;

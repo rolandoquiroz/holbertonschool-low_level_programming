@@ -1,4 +1,10 @@
 #include "holberton.h"
+/**
+* print_sign - Prints the sign of a number
+* @n: An int that will be checked for sign
+*
+*Return: An int
+*/
 int print_sign(int n)
 {
 int my_answer;
