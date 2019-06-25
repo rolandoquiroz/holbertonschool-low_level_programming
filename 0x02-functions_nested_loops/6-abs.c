@@ -6,18 +6,13 @@
  */
 int _abs(int n)
 {
-int my_answer;
-if (n > 0)
+if (n < 0)
 {
-my_answer = n;
-}
-else if (n == 0)
-{
-my_answer = 0;
+n = -n;
 }
 else
 {
-my_answer = -n;
+n = n;
 }
-return (my_answer);
+return (n);
 }
