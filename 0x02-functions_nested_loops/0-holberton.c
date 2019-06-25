@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- * main - Program that prints Holberton, followed by a new line 
+ * main - Program that prints Holberton, followed by a new line
  *
  * Return: Always 0.
  */
@@ -19,4 +19,3 @@ _putchar('n');
 _putchar('\n');
 return (0);
 }
-
