@@ -16,7 +16,6 @@ for (i = n ; i < 98 ; i++)
 printf("%d, ", i);
 }
 printf("%d\n", 98);
-_putchar(10);
 }
 else if (n == 98)
 {
