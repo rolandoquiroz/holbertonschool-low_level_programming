@@ -1,33 +1,29 @@
 #include "holberton.h"
 void jack_bauer(void)
 {
-int h1, h0, m1, m0:
-h1 = 48;
-while()
+int h, i, j, k;
+for (h = 0 ; h <= 2; h++)
 {
-h0 = 48;
-while()
+for (i = 0 ; i <= 9; i++)
 {
-m1 = 48;
-while()
+for (j = 0 ; j <= 5 ; j++)
 {
-m0 = 48;
-for (m0%10<)
+for (k = 0 ; k <= 9 ; k++)
 {
-_putchar(h1);
-_putchar(h0);
-_putchar(':');
-_putchar(m1);
-_putchar(m0);
-_putchar('\n');
-
-m0++;
+_putchar('0' + h);
+_putchar('0' + i);
+_putchar(58);
+_putchar('0' + j);
+_putchar('0' + k);
+_putchar(10);
 }
-m1++;
+if ((j == 5) && (k == 9))
+break;
 }
-h0++;
+if ((h == 2) && (i == 3))
+break;
 }
-h1++;
 }
+_putchar(10);
 return;
 }
