@@ -12,10 +12,10 @@ for (k = 0 ; k <= 9 ; k++)
 {
 _putchar('0' + h);
 _putchar('0' + i);
-_putchar(58);
+_putchar(':');
 _putchar('0' + j);
 _putchar('0' + k);
-_putchar(10);
+_putchar('\n');
 }
 if ((j == 5) && (k == 9))
 {
@@ -28,6 +28,5 @@ break;
 }
 }
 }
-_putchar(10);
 return;
 }
