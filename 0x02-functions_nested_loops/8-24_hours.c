@@ -18,10 +18,14 @@ _putchar('0' + k);
 _putchar(10);
 }
 if ((j == 5) && (k == 9))
+{
 break;
 }
+}
 if ((h == 2) && (i == 3))
+{
 break;
+}
 }
 }
 _putchar(10);
