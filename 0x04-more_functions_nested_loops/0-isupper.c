@@ -1,16 +1,20 @@
 #include "holberton.h"
 /**
- * print_alphabet - prints the alphabet, in lowercase, followed by a new line.
+ * _isupper - function that checks for uppercase character
+ * @c: int c
  *
- * Return: void
+ * Return: 1 if c is uppercase, 0 otherwise
  */
-void print_alphabet(void)
+int _isupper(int c)
 {
-  int i;
-  for (i = 97; i < 123 ; i++)
-    {
-      _putchar(i);
-    }
-  _putchar(10);
-  return;
+int ret;
+if (c > 64 && c < 91)
+{
+ret = 1;
+}
+else
+{
+ret = 0;
+}
+return (ret);
 }
