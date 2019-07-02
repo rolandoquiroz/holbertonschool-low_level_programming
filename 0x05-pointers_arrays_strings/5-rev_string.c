@@ -11,9 +11,9 @@ int j = 0;
 int len = 0;
 char r[1000];
 
-while (s[i] != 0)
+while (s[len] != 0)
 {
-i++;
+len++;
 }
 len--;
 for (i = len; i >= 0; i--)
