@@ -13,6 +13,7 @@ while (s[len] != '\0')
 {
 ++len;
 }
+len = len - 1;
 while (s[len] >= 0)
 {
 _putchar(s[len]);
