@@ -22,6 +22,6 @@ while (i <= len)
 dest[i] = src[i];
 i++;
 }
-dest[len + 1] = 0;
+dest[i + 1] = 0;
 return (dest);
 }
