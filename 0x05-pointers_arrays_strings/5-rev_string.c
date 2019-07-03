@@ -16,14 +16,17 @@ while (s[len] != 0)
 len++;
 }
 len--;
-for (i = len; i >= 0; i--)
+i = len;
+while (i >= 0)
 {
 r[j] = s[i];
 j++;
+i--;
 }
-for (i = 0; i <= len; i++)
+i = 0; while (i <= len)
 {
 s[i] = r[i];
+i++;
 }
 return;
 }
