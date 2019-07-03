@@ -20,9 +20,8 @@ i = 0;
 while (i <= len)
 {
 dest[i] = src[i];
-if (i == len)
-dest[i + 1] = 0;
 i++;
 }
+dest[len + 1] = 0;
 return (dest);
 }
