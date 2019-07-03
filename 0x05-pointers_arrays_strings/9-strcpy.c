@@ -21,10 +21,7 @@ while (i <= len)
 {
 dest[i] = src[i];
 if (i == len)
-{
 dest[i + 1] = 0;
-break;
-}
 i++;
 }
 return (dest);
