@@ -23,8 +23,8 @@ j = 0;
 while (dest[j]  !=  '\0')
 {
 dest[i] = src[j];
-i++;
 j++;
+i++;
 }
 dest[i] = '\0';
 
