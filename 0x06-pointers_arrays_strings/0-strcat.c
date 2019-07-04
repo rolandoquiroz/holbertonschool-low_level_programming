@@ -20,13 +20,13 @@ i++;
 }
 
 j = 0;
-while (dest[j]  !=  '\0')
+while (dest[j] != '\0')
 {
 dest[i] = src[j];
-j++;
 i++;
+j++;
 }
-dest[i] = '\0';
+dest[j] = '\0';
 
 return (dest);
 }
