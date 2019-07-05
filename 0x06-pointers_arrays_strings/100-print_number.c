@@ -9,15 +9,32 @@
 void print_number(int n)
 {
 
-  if (n < 0) { 
-   _putchar('-'); 
-    n = -1*n; 
-  } 
-   
-  if (n/10) 
-    _putchar(n/10); 
-   
- _putchar(n%10 + '0'); 
+char lD;
+int  r;
 
+if (n < 0)
+{
+_putchar('-');
+lD = (char)('0' - (n % 10));
+n /= -10;
+}
+else
+{
+lD = (char)((n % 10) + '0');
+n /= 10;
+}
+r = 0;
+while (n > 0)
+{
+r = r * 10 + (n % 10);
+n /= 10;
+}
+while (r > 0)
+{
+char c = (char)((r % 10) + '0');
+_putchar(c);
+r /= 10;
+}
+_putchar(lD);
 return;
 }
