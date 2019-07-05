@@ -8,7 +8,7 @@ char *leet(char *s)
 {
 char d[5][2] = {{'a', 'A'}, {'e', 'E'}, {'o', 'O'}, {'t', 'T'}, {'l', 'L'}};
 char v[] = {'4', '3', '0'};
-int i, int j;
+int i, j;
 i = 0;
 while (s[i] != '\0')
 {
