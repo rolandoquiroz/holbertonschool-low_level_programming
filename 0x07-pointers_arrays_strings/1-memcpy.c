@@ -2,9 +2,9 @@
 /**
  * _memcpy - Function that copies memory area.
  *
- * @s: char *dest
+ * @dest: char *dest
  *
- * @b: char *src
+ * @src: char *src
  *
  * @n: unsigned int n
  *
@@ -13,11 +13,11 @@
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 unsigned int i;
-i = 0; 
-while ( i < n )
+i = 0;
+while (i < n)
 {
 dest[i] = src[i];
 i++;
 }
-return dest;
+return (dest);
 }
