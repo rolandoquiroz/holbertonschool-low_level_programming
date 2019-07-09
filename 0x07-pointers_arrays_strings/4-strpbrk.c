@@ -4,17 +4,17 @@
  *
  * @s: char *s
  *
- * @accept: char *accept 
+ * @accept: char *accept
  *
  * Return: char
  */
 char *_strpbrk(char *s, char *accept)
 {
 int i, j;
-i=0; 
-while (s[i]!='\0')
+i = 0;
+while (s[i] != '\0')
 {
-j=0;
+j = 0;
 while (accept[j] != '\0')
 {
 if (s[i] == accept[j])
@@ -23,5 +23,5 @@ j++;
 }
 i++;
 }
-return (0);
+return (s + i);
 }
