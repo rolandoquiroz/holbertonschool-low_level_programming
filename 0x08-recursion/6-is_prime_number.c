@@ -26,7 +26,7 @@ return (_prime(n, l + 1));
 }
 
 /**
- * _prime - Function that answer if the number is a prime
+ * is_prime_number - Function that answer if the number is a prime
  *
  * @n: int n is the number to be evaluated
  *
@@ -34,5 +34,5 @@ return (_prime(n, l + 1));
  */
 int is_prime_number(int n)
 {
-  return (_prime(n, 2));
+return (_prime(n, 2));
 }
