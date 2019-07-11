@@ -6,7 +6,7 @@
  *
  * Return: 1 If n is prime or 0 If n is not prime
  */
-int _prime(int, int);
+int _prime(int n, int l);
 int is_prime_number(int n)
 {
 return (_prime(n, 2));
@@ -25,9 +25,9 @@ int _prime(int n, int l)
 {
 if (n < 2)
 return (0);
-else if (n % l == 0 && l != n)
+else if (n % l == 0 && n != l)
 return (0);
-else if (l == n)
+else if (n == l)
 return (1);
 return (_prime(n, l + 1));
 }
