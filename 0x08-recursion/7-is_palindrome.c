@@ -17,27 +17,25 @@ return (0);
 /**
  * _palindrome - Evaluates if a string is a palindrome and or not.
  *
- * @s: char *s is the string to be checked
+ * @s: char *s is the string to be evaluated
  *
- * @left_index: Evalutes string from left
- *
- * @right_index: Evaluates string from right
+ * @l: int l long of the string to be evaluated
  *
  * Return: 1 - Palindrome string  | 0 - Not Palindrome string
  */
-int _palindrome(char *s, int len)
+int _palindrome(char *s, int l)
 {
-if (len <= 1)
+if (l <= 1)
 {
 return (1);
 }
-else if (*s != *(s + (len - 1)))
+else if (*s != *(s + (l - 1)))
 {
 return (0);
 }
 else
 {
-return (_palindrome(s + 1, (len - 1) - 1));
+return (_palindrome(s + 1, (l - 1) - 1));
 }
 }
 /**
@@ -49,13 +47,14 @@ y *
  */
 int is_palindrome(char *s)
 {
-int len = _strlen_recursion(s);
-if (len <= 1)
+int l = 0;
+l = _strlen_recursion(s);
+if (l <= 1)
 {
 return (1);
 }
 else
 {
-return (_palindrome(s, len));
+return (_palindrome(s, l));
 }
 }
