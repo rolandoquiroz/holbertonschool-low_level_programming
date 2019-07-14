@@ -34,5 +34,5 @@ s = s + atoi(argv[i]);
 i++;
 }
 printf("%d\n", s);
-return (s);
+return (0);
 }
