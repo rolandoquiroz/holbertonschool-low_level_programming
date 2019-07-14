@@ -21,7 +21,7 @@ i = 1;
 while (i < argc)
 {
 j = 0;
-while (*(*(argv + i)+j) != '\0')
+while (*(*(argv + i)+j))
 {
 if (!isdigit(*(*(argv + i)+j)))
 {
