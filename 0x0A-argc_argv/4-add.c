@@ -30,7 +30,7 @@ return (1);
 }
 j++;
 }
-s = s + atoi(*(argv + i));
+s = s + atoi(argv[i]);
 i++;
 }
 printf("%d\n", s);
