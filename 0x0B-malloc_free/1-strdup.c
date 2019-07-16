@@ -14,26 +14,26 @@ char *_strdup(char *str)
 	unsigned int i, leng;
 	char *s;
 
-	leng = 0;
-	while (str[leng] != '\0')
+	if (str == NULL)
 	{
-		leng++;
-	}
-
-
-		if (str == NULL)
+		return (NULL);
+        }
+	else
+	{
+		leng = 0;
+		while (str[leng] != '\0')
 		{
-			return (NULL);
+			leng++;
 		}
-		else
-		{
-			s = (char *)malloc(leng * sizeof(char));     
-			for (i = 0; i < leng; i++)
+
+		s = (char *)malloc(leng * sizeof(char));
+
+		for (i = 0; i < leng; i++)
 		{
 			s[i] = str[i];
 		}
 
 		return (s);
 
-		}
+	}
 }
