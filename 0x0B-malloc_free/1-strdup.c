@@ -26,7 +26,7 @@ char *_strdup(char *str)
 			leng++;
 		}
 
-		s = (char *)malloc(leng * sizeof(char));
+		s = (char *)malloc((leng + 1) * sizeof(char));
 
 		if (s == NULL)
 		{
@@ -34,7 +34,7 @@ char *_strdup(char *str)
 		}
 		else
 		{
-		for (i = 0; i < leng; i++)
+			for (i = 0; i < (leng + 1); i++)
 		{
 			s[i] = str[i];
 		}
