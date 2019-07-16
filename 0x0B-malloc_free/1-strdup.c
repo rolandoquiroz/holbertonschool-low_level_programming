@@ -18,7 +18,8 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-
+	else
+	{
 		leng = 0;
 		while (str[leng] != '\0')
 		{
@@ -40,4 +41,5 @@ char *_strdup(char *str)
 		}
 
 		return (s);
+	}
 }
