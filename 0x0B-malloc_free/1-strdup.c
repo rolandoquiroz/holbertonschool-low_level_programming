@@ -30,7 +30,7 @@ char *_strdup(char *str)
 
 		if (s == NULL)
 		{
-			s = 0;
+			return (NULL);
 		}
 		else
 		{
@@ -38,8 +38,8 @@ char *_strdup(char *str)
 		{
 			s[i] = str[i];
 		}
+		return (s);
 		}
 
-		return (s);
 	}
 }
