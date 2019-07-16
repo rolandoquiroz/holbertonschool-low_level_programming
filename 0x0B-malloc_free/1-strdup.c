@@ -2,24 +2,6 @@
 #include <stdlib.h>
 
 /**
- * str_len - Measures a string lenght
- *
- * @str: String to be measured
- *
- * Return: unsigned int lenght of the string
- */
-
-unsigned int str_len(const char *str)
-{
-	unsigned int len = 0;
-
-	for (len = 0 ;; ++len)
-	{
-		if (str[len] == 0)
-		return (len);
-	}
-
-/**
  * _strdup - Returns a pointer to a copy of the string given as a parameter.
  *
  * @str: String given as a parameter.
@@ -29,10 +11,16 @@ unsigned int str_len(const char *str)
 
 char *_strdup(char *str)
 {
-	unsigned int i;
+	unsigned int i, leng;
 	char *s;
-	/* malloc() allocate the memory for zise chars */
-	s = (char *)malloc(str_len(*str) * sizeof(char));
+
+	leng = 0;
+	while (str[leng] != '\0')
+	{
+		leng++;
+	}
+
+	s = (char *)malloc(leng * sizeof(char));
 
 		if (str == NULL)
 		{
@@ -40,7 +28,7 @@ char *_strdup(char *str)
 		}
 		else
 		{
-			for (i = 0; i < str_len(*str); i++)
+			for (i = 0; i < leng; i++)
 		{
 			s[i] = str[i];
 		}
@@ -48,5 +36,4 @@ char *_strdup(char *str)
 		return (s);
 
 		}
-	}
 }
