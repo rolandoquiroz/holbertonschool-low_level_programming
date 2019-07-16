@@ -20,7 +20,6 @@ char *_strdup(char *str)
 		leng++;
 	}
 
-	s = (char *)malloc(leng * sizeof(char));
 
 		if (str == NULL)
 		{
@@ -28,6 +27,7 @@ char *_strdup(char *str)
 		}
 		else
 		{
+			s = (char *)malloc(leng * sizeof(char));     
 			for (i = 0; i < leng; i++)
 		{
 			s[i] = str[i];
