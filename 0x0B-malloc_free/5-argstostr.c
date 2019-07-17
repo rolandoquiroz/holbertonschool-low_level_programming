@@ -49,8 +49,6 @@ char *argstostr(int ac, char **av)
 		i++;
 		arg_c++;
 	}
-	i++;
-	pnt[i] = '\0';
 
 	return (pnt);
 }
