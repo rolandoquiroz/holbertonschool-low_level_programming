@@ -42,11 +42,11 @@ char *argstostr(int ac, char **av)
 		while (av[arg_c][arg_v] != '\0')
 		{
 			pnt[i] = av[arg_c][arg_v];
-                        i++;
+			i++;
 			arg_v++;
 		}
 		pnt[i] = '\n';
-                i++;
+		i++;
 		arg_c++;
 	}
 	i++;
