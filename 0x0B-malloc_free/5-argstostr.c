@@ -40,15 +40,15 @@ char *argstostr(int ac, char **av)
 		arg_v = 0;
 		while (av[arg_c][arg_v] != '\0')
 		{
-			*(pnt + i) = av[arg_c][arg_v];
+			pnt[i] = av[arg_c][arg_v];
 			i++;
 			arg_v++;
 		}
-		*(pnt + i) = '\n';
+		pnt[i] = '\n';
 		i++;
 	}
 	i++;
-	*pnt = '\0';
+	pnt[i] = '\0';
 
 	return (pnt);
 }
