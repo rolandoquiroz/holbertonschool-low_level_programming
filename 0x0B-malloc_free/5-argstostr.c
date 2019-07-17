@@ -23,12 +23,15 @@ char *argstostr(int ac, char **av)
 	for (arg_c = 0; arg_c < ac; arg_c++)
 	{
 		for (arg_v = 0; av[arg_c][arg_v] != '\0'; arg_v++)
+		{
 			size++;
+		}
 		size++;
 	}
 	size++;
 
 	pnt = malloc(size * sizeof(char));
+
 	if (pnt == NULL)
 		return (NULL);
 
@@ -37,15 +40,15 @@ char *argstostr(int ac, char **av)
 		arg_v = 0;
 		while (av[arg_c][arg_v] != '\0')
 		{
-			pnt[i] = av[arg_c][arg_v];
+			*(pnt + i) = av[arg_c][arg_v];
 			i++;
 			arg_v++;
 		}
-		pnt[i] = '\n';
+		*(pnt + i) = '\n';
 		i++;
 	}
 	i++;
-	pnt[i] = '\0';
+	*(pnt + i) = '\0';
 
 	return (pnt);
 }
