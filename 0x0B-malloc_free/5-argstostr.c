@@ -35,7 +35,8 @@ char *argstostr(int ac, char **av)
 	if (pnt == NULL)
 		return (NULL);
 
-	for (arg_c = 0; arg_c < ac; arg_c++)
+	arg_c = 0;
+	while (arg_c < ac)
 	{
 		arg_v = 0;
 		while (av[arg_c][arg_v] != '\0')
@@ -46,6 +47,7 @@ char *argstostr(int ac, char **av)
 		}
 		pnt[i] = '\n';
 		i++;
+		arg_c++;
 	}
 	i++;
 	pnt[i] = '\0';
