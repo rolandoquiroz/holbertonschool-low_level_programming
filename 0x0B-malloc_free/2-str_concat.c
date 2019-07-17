@@ -16,13 +16,10 @@ char *str_concat(char *s1, char *s2)
 	unsigned int size1 = 0, size2 = 0, size3 = 0, i = 0;
 	char *total;
 
-	if ((s1 == NULL) || (s2 == NULL))
-	{
-		return (NULL);
-	}
-
-	else
-	{
+	if (s1 == NULL)
+		s1 = "";
+	if (s2 == NULL)
+		S2 = "";
 
 	while (s1[size1] != '\0')
 		size1++;
@@ -33,6 +30,10 @@ char *str_concat(char *s1, char *s2)
 	size3 = size1 + size2 + 1;
 	total = malloc(size3);
 
+	if (total == NULL)
+		total = NULL;
+	else
+	{
 	while (*s1 != '\0')
 	{
 		total[i] = *s1;
@@ -45,12 +46,8 @@ char *str_concat(char *s1, char *s2)
 		s2++;
 		i++;
 	}
-
 	total[i] = '\0';
-
-	if (total == NULL)
-		return (NULL);
-	else
-		return (total);
+	}
+	return (total);
 	}
 }
