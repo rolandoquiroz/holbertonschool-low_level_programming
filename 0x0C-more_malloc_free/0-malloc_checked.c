@@ -11,10 +11,9 @@
 
 void *malloc_checked(unsigned int b)
 {
-	int *v_pnt;
+	void *v_pnt;
 
 	v_pnt = malloc(b);
-
 	if (v_pnt == NULL)
 	{
 		exit(98);
