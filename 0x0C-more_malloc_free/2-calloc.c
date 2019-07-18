@@ -40,5 +40,6 @@ if (!pnt)
 {
 return (NULL);
 }
-return (_memset(pnt, 0, nmemb * size));
+_memset(pnt, 0, nmemb * size));
+return (pnt);
 }
