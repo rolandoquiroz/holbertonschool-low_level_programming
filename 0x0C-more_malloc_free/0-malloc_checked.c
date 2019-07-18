@@ -11,7 +11,7 @@
 
 void *malloc_checked(unsigned int b)
 {
-	char *v_pnt;
+	int *v_pnt;
 
 	v_pnt = malloc(b);
 
