@@ -1,10 +1,8 @@
 #include "holberton.h"
-#include <stdio.h>
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * array_range - Reallocates a memory block using malloc and free
+ * _realloc - Reallocates a memory block using malloc and free
  *
  * @ptr: pointer to the memory previously allocated : malloc(old_size)
  *
