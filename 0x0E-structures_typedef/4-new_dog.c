@@ -26,28 +26,39 @@ int _strlen(char *s)
  */
 dog_t *new_dog(char *name, float age, char *owner)
 {
-	int name_length = 0, owner_length = 0, i;
 	dog_t *puppie;
+	int name_length = 0, owner_length = 0, i;
 
 	name_length = _strlen(name);
 	owner_length = _strlen(owner);
+
+	if (name == NULL || owner == NULL)
+		return (NULL)
 
 	puppie = malloc(sizeof(dog_t));
 	if (puppie == NULL)
 	return (NULL);
 
 
-	puppie->name = malloc((name_length + 1) * sizeof(puppie->name));
-	if (puppie == NULL)
+	puppie->name = malloc(name_length + 1);
+	if (puppie->name == NULL)
+	{
+		free(puppie);
 		return (NULL);
+	}
+
 	for (i = 0; i <= (name_length + 1); i++)
 		puppie->name[i] = name[i];
 
 	puppie->age = age;
 
-	puppie->owner = malloc((owner_length + 1) * sizeof(puppie->owner));
-	if (puppie == NULL)
+	puppie->owner = malloc(owner_length + 1);
+	if (puppie->owner == NULL)
+	{
+		free(puppie->name);
+                free(puppie);
 		return (NULL);
+	}
 	for (i = 0; i <= (owner_length + 1); i++)
 		puppie->owner[i] = owner[i];
 
