@@ -22,7 +22,7 @@ int main(int argc, char **argv)
 	number_1 = atoi(argv[1]);
 	number_2 = atoi(argv[3]);
 
-	r = (*get_op_func(argv[2]))(number_1, number_2);
+	ans = (*get_op_func(argv[2]))(number_1, number_2);
 	printf("%d\n", ans);
 	return (0);
 }
