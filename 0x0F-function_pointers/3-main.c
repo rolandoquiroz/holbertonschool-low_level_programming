@@ -9,11 +9,20 @@
  */
 int main(int argc, char **argv)
 {
-	if (argc == 4)
+	int number_1 = 0;
+	int number_2 = 0;
+	int ans = 0;
+
+	if (argc != 4)
 	{
-		printf("%d\n", get_op_func(argv[2])(atoi(argv[1]), atoi(argv[3])));
-		return (0);
+		printf("Error\n");
+		exit(98);
 	}
-	printf("Error\n");
-	return (98);
+
+	number_1 = atoi(argv[1]);
+	number_2 = atoi(argv[3]);
+
+	r = (*get_op_func(argv[2]))(number_1, number_2);
+	printf("%d\n", ans);
+	return (0);
 }
