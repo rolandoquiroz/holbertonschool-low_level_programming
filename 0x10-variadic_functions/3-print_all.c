@@ -59,15 +59,16 @@ void prnt_str(va_list st)
 
 /**
  * print_all - Function that prints anything
- * @format: A pointer to a ist of types of arguments passed to the function
+ * @format: A pointer to a list of types of arguments passed to the function
  * Return: Nothing
  */
 
 void print_all(const char * const format, ...)
 {
-	int i = 0, j = 0;
+/*i and j to step through format and chr_opt_to_prnt_opt_array */
+	int i, j;
 
-	char_data_type_t char_data_type_array[] = {
+	chr_opt_to_prnt_opt_type chr_opt_to_prnt_opt_array[] = {
 		{"c", prnt_char},
 		{"i", prnt_int},
 		{"f", prnt_float},
@@ -78,19 +79,20 @@ void print_all(const char * const format, ...)
 	va_list elements_to_print;
 
 	va_start(elements_to_print, format);
+	i = 0;
 	while (format != NULL && format[i])
 	{
 		j = 0;
-		while (char_data_type_array[j].c)
+		while (chr_opt_to_prnt_opt_array[j].chr_opt)
 		{
-			if (format[i] == *(char_data_type_array[j].c))
+			if (format[i] == *(chr_opt_to_prnt_opt_array[j].chr_opt))
 			{
-				char_data_type_array[j].prnt_type(elements_to_print);
+				chr_opt_to_prnt_opt_array[j].prnt_opt(elements_to_print);
 				break;
 			}
 			j++;
 		}
-		if ((format[i + 1]) != '\0' && char_data_type_array[j].c != NULL)
+		if ((format[i + 1]) != '\0' && chr_opt_to_prnt_opt_array[j].chr_opt != NULL)
 			printf(", ");
 		i++;
 	}
