@@ -1,7 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
 
-
 /**
  * _strdup - Returns a pointer to a copy of the string given as a parameter.
  * @str: String given as a parameter.
@@ -45,7 +44,6 @@ char *_strdup(const char *str)
 
 /**
  * _strlen - Function that returns the length of a string.
- *
  * @s: char *s String to be processed
  * Return: The length of the string
  */

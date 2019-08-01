@@ -1,7 +1,6 @@
 #include "lists.h"
 #include <stdlib.h>
 
-
 /**
  * _strdup - Returns a pointer to a copy of the string given as a parameter.
  * @str: String given as a parameter.
