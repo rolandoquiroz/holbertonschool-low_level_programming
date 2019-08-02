@@ -4,11 +4,11 @@
 /**
  * _strlen - return the long from a string
  *  @s: pointer
- *  Return: int
+ *  Return: number of chars
  */
-int _strlen(const char *s)
+unsigned int _strlen(const char *s)
 {
-	int count = 0;
+	unsigned int count = 0;
 
 	while (s[count] != 0)
 	{
@@ -34,11 +34,7 @@ char *_strdup(const char *str)
 	}
 	else
 	{
-		leng = 0;
-		while (str[leng] != '\0')
-		{
-			leng++;
-		}
+		leng = _strlen(str);
 
 		s = (char *)malloc((leng + 1) * sizeof(char));
 
@@ -73,8 +69,8 @@ list_t *add_node(list_t **head, const char *str)
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 		return (NULL);
-	len = _strlen(str);
 	new->str = _strdup(str);
+	len = _strlen(str);
 	new->len = len;
 	new->next = *head;
 	*head = new;
