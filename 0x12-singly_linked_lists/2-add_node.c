@@ -9,15 +9,13 @@
  * Return: The length of the string
  */
 
-int _strlen(char *s)
+unsigned int _strlen(char *s)
 {
-	int len = 0;
+	unsigned int i;
 
-	while (s[len] != '\0')
-	{
-		++len;
-	}
-	return (len);
+	for (i = 0; str[i]; i++)
+		;
+	return (i);
 }
 
 /**
