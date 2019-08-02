@@ -23,7 +23,7 @@ int _strlen(const char *s)
  * Return: char
  */
 
-char *_strdup(char *str)
+char *_strdup(const char *str)
 {
 	unsigned int i, leng;
 	char *s;
