@@ -1,22 +1,57 @@
 #include "lists.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
- * _strlen - Function that returns the length of a string.
- * @s: char *s String to be processed
- * Return: The length of the string
+ * _strlen - return the long from a string
+ *  @s: pointer
+ *  Return: number of chars
+ */
+unsigned int _strlen(const char *s)
+{
+	unsigned int count = 0;
+
+	while (s[count] != 0)
+	{
+		count++;
+	}
+	return (count);
+}
+
+/**
+ * _strdup - Returns a pointer to a copy of the string given as a parameter.
+ * @str: String given as a parameter.
+ * Return: char
  */
 
-int _strlen(char *s)
+char *_strdup(const char *str)
 {
-	int len = 0;
+	unsigned int i, leng;
+	char *s;
 
-	while (s[len] != '\0')
+	if (str == NULL)
 	{
-		++len;
+		return (NULL);
 	}
-	return (len);
+	else
+	{
+		leng = _strlen(str);
+
+		s = (char *)malloc((leng + 1) * sizeof(char));
+
+		if (s == NULL)
+		{
+			return (NULL);
+		}
+		else
+		{
+			for (i = 0; i < (leng + 1); i++)
+			{
+				s[i] = str[i];
+			}
+			return (s);
+		}
+
+	}
 }
 
 /**
@@ -33,7 +68,7 @@ list_t *add_node_end(list_t **head, const char *str)
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 		return (NULL);
-	new->str = strdup(str);
+	new->str = _strdup(str);
 	new->len = _strlen(new->str);
 	new->next = NULL;
 	if ((*head) == NULL)
