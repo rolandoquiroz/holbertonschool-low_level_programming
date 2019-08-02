@@ -1,6 +1,5 @@
 #include "lists.h"
 #include <stdlib.h>
-#include <string.h>
 
 /**
  * _strlen - return the long from a string
@@ -19,6 +18,47 @@ int _strlen(const char *s)
 }
 
 /**
+ * _strdup - Returns a pointer to a copy of the string given as a parameter.
+ * @str: String given as a parameter.
+ * Return: char
+ */
+
+char *_strdup(char *str)
+{
+	unsigned int i, leng;
+	char *s;
+
+	if (str == NULL)
+	{
+		return (NULL);
+	}
+	else
+	{
+		leng = 0;
+		while (str[leng] != '\0')
+		{
+			leng++;
+		}
+
+		s = (char *)malloc((leng + 1) * sizeof(char));
+
+		if (s == NULL)
+		{
+			return (NULL);
+		}
+		else
+		{
+			for (i = 0; i < (leng + 1); i++)
+			{
+				s[i] = str[i];
+			}
+			return (s);
+		}
+
+	}
+}
+
+/**
  * add_node - Function to add a new node at the beginning of list_t
  * @head: Pointer to the pointer to list_t
  * @str: Pointer to string to copy on to the node
@@ -34,7 +74,7 @@ list_t *add_node(list_t **head, const char *str)
 	if (new == NULL)
 		return (NULL);
 	len = _strlen(str);
-	new->str = strdup(str);
+	new->str = _strdup(str);
 	new->len = len;
 	new->next = *head;
 	*head = new;
