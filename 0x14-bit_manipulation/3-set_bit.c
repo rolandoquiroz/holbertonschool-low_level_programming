@@ -1,11 +1,18 @@
 #include "holberton.h"
 
+#include "holberton.h"
 /**
- * op_add - Makes the sum of two numbers
- * @arg1: First operand
- * @arg2: Second operand
+ * set_bit - Function that sets the value of a bit to 1 at a given position
+ *@n: number to change
+ *@index: index starting from 0 of the bit you want to set
  *
- * Return: The sum of the two parameters
+ *Return: 1 if it worked or -1 if an error occurred.
  */
 
-{}
+int set_bit(unsigned long int *n, unsigned int index)
+{
+	if (index >= sizeof(*n) * 8)
+		return (-1);
+	*n |= 1 << index;
+	return (1);
+}
