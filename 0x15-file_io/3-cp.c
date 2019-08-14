@@ -14,8 +14,8 @@ void exit_100(int);
 
 /**
  * main - copies the contents of one file to another
- * @ac: integer number of arguments
- * @av: pointer to string arguments
+ * @argc: integer number of arguments
+ * @argv: pointer to string arguments
  * Return: 0 on success, or one of 97, 98, 99, 100 on failure
  */
 int main(int argc, char **argv)
