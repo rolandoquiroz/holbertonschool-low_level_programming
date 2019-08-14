@@ -18,22 +18,22 @@ void exit_100(int);
  * @av: pointer to string arguments
  * Return: 0 on success, or one of 97, 98, 99, 100 on failure
  */
-int main(int ac, char **av)
+int main(int argc, char **argv)
 {
 	char buf[1024];
 	int fd_dest = 0, fd_src = 0;
 	ssize_t w = 0, r = 0;
 
-	if (ac != 3)
+	if (argc != 3)
 		exit_97();
 
-	fd_src = open(av[1], O_RDONLY);
+	fd_src = open(argv[1], O_RDONLY);
 	if (fd_src == -1)
-		exit_98(av[1]);
+		exit_98(argv[1]);
 
-	fd_dest = open(av[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
+	fd_dest = open(argv[2], O_WRONLY | O_CREAT | O_TRUNC, 0664);
 	if (fd_dest == -1)
-		exit_99(av[2]);
+		exit_99(argv[2]);
 
 	r = read(fd_src, buf, 1024);
 	do {
@@ -41,12 +41,12 @@ int main(int ac, char **av)
 			break;
 		w = write(fd_dest, buf, r);
 		if (w == -1)
-			exit_99(av[2]);
+			exit_99(argv[2]);
 		r = read(fd_src, buf, 1024);
 	} while (r > 0);
 
 	if (r == -1)
-		exit_98(av[1]);
+		exit_98(argv[1]);
 
 	w = close(fd_dest);
 	if (w == -1)
