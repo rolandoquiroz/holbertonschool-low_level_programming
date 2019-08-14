@@ -16,11 +16,12 @@ void exit_100(int);
  * main - copies the contents of one file to another
  * @argc: integer number of arguments
  * @argv: pointer to string arguments
+ *
  * Return: 0 on success, or one of 97, 98, 99, 100 on failure
  */
 int main(int argc, char **argv)
 {
-	char buf[1024];
+	char buffer[1024];
 	int fd_dest = 0, fd_src = 0;
 	ssize_t w = 0, r = 0;
 
@@ -35,14 +36,14 @@ int main(int argc, char **argv)
 	if (fd_dest == -1)
 		exit_99(argv[2]);
 
-	r = read(fd_src, buf, 1024);
+	r = read(fd_src, buffer, 1024);
 	do {
 		if (r == -1)
 			break;
-		w = write(fd_dest, buf, r);
+		w = write(fd_dest, buffer, r);
 		if (w == -1)
 			exit_99(argv[2]);
-		r = read(fd_src, buf, 1024);
+		r = read(fd_src, buffer, 1024);
 	} while (r > 0);
 
 	if (r == -1)
