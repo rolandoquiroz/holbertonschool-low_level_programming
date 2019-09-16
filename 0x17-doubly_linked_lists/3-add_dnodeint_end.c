@@ -1,8 +1,8 @@
 #include "lists.h"
 /**
- * op_add - Makes the sum of two numbers
- * @arg1: First operand
- * @arg2: Second operand
+ * add_dnodeint_end - Makes the sum of two numbers
+ * @head: First operand
+ * @n: Second operand
  *
  * Return: The sum of the two parameters
  */
@@ -25,7 +25,7 @@ dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 		return (new_node);
 	}
 
-	while ((ptr != NULL) &&(ptr->next !=NULL))
+	while ((ptr != NULL) && (ptr->next != NULL))
 		ptr = ptr->next;
 
 	ptr->next = new_node;
