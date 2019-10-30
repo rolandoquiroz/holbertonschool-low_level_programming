@@ -1,36 +1,32 @@
 #include "sort.h"
 /**
- * bubble_sort - Makes the sum of two numbers
- * @array: First operand
- * @size: Second operand
+ * bubble_sort - Sorts an array of ints using the Bubble sort algorithm
+ * @array: Array of ints
+ * @size: Size of the array
  *
- * Return: The sum of the two parameters
+ * Return: void
  */
 void bubble_sort(int *array, size_t size)
 {
-	int inter, tmp;
+	int tmp;
 	size_t i, j;
 
-	inter = 1;
 	i = 0;
-	while ((i < size - 1) && inter)
+	while (i < size)
 	{
-		inter = 0;
-
-		for (j = size - 1; j > i; j--)
+		j = 0;
+		while (j < size - 1)
 		{
-			if (array[j] < array[j - 1])
+			if (array[j] > array[j + 1])
 			{
 				tmp = array[j];
-				array[j] = array[j - 1];
-				array[j - 1] = tmp;
+				array[j] = array[j + 1];
+				array[j + 1] = tmp;
 				print_array(array, size);
-				inter = 1;
 			}
+			j++;
 		}
-
-		if (inter)
-			i++;
+		i++;
 	}
 
 }
