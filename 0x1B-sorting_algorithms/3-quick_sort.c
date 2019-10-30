@@ -18,7 +18,6 @@ int partition(int *a, ssize_t l, ssize_t h, size_t size)
 
 	piv = a[h];
 	i = l - 1;
-
 	for (j = l; j < h; j++)
 	{
 		if (a[j] <= piv)
@@ -32,13 +31,11 @@ int partition(int *a, ssize_t l, ssize_t h, size_t size)
 		}
 
 	}
-
 	tmp = a[i + 1];
 	a[i + 1] = a[h];
 	a[h] = tmp;
 	if (a[i + 1] != a[h])
 		print_array(a, size);
-
 	return (i + 1);
 }
 
