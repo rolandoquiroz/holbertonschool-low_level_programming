@@ -11,5 +11,4 @@ oclean: $(OBJ)
 	$(RM) -f $(OBJ)
 fclean: clean oclean
 
-re: $(SRC)
-	gcc $(SRC)
+re: oclean all
