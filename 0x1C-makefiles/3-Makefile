@@ -5,10 +5,12 @@ NAME = holberton
 RM  = rm
 all: $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
-clean: $(NAME)
+clean:
 	$(RM) -f *~ $(NAME)
-oclean: $(OBJ)
+oclean:
 	$(RM) -f $(OBJ)
 fclean: clean oclean
 
 re: oclean all
+
+.PHONY: clean oclean fclean re
