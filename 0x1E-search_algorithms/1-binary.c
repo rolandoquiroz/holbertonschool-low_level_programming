@@ -14,12 +14,12 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-	if (array)
+	if (!array)
 	{
-		return (binary_search_aux(array, 0, size - 1, value));
+		return (-1);
 	}
+	return (binary_search_aux(array, 0, size - 1, value));
 }
-
 /**
  * binary_search_aux - Function that searches for a value in a sorted
  * array of integers using the Binary search algorithm
