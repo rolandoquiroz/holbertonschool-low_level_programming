@@ -47,11 +47,11 @@ int binary_search_aux(int *array, size_t inferior, size_t superior, int value)
 	}
 	printf("\n");
 
-	if (superior == inferior)
+	if ((array[inferior] != value) && (superior == inferior))
 	{
 		return (-1);
 	}
-	else if ((array[inferior] == value) && (inferior < superior))
+	else if (array[inferior] == value)
 	{
 		return (inferior);
 	}
