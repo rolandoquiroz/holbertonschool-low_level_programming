@@ -18,10 +18,6 @@ int binary_search(int *array, size_t size, int value)
 	{
 		return (binary_search_aux(array, 0, size - 1, value));
 	}
-	else
-	{
-	return (-1);
-	}
 }
 
 /**
