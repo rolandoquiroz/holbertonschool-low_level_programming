@@ -14,11 +14,11 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-	if (!array)
+	if (array && size)
 	{
-		return (-1);
+		return (binary_search_aux(array, 0, size - 1, value));
 	}
-	return (binary_search_aux(array, 0, size - 1, value));
+	return (-1);
 }
 /**
  * binary_search_aux - Function that searches for a value in a sorted
@@ -47,13 +47,13 @@ int binary_search_aux(int *array, size_t inferior, size_t superior, int value)
 	}
 	printf("\n");
 
-	if ((array[inferior] != value) && (superior == inferior))
-	{
-		return (-1);
-	}
-	else if (array[inferior] == value)
+	if ((array[inferior] == value))
 	{
 		return (inferior);
+	}
+	else if ((array[inferior] != value) && (superior == inferior))
+	{
+		return (-1);
 	}
 	medium = ((inferior + superior) / 2);
 	if (value > array[medium])
