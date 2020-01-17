@@ -52,11 +52,11 @@ int binary_search_aux(int *array, size_t inferior, size_t superior, int value)
 	{
 		return (-1);
 	}
-	else if ((array[inferior] == value) && (inferior  == superior))
+	else if ((array[inferior] == value) && (inferior == superior))
 	{
 		return (inferior);
 	}
-	medium = (inferior + superior) / 2;
+	medium = ((inferior + superior) / 2);
 	if (value > array[medium])
 	{
 		return (binary_search_aux(array, medium + 1, superior, value));
@@ -65,5 +65,8 @@ int binary_search_aux(int *array, size_t inferior, size_t superior, int value)
 	{
 		return (binary_search_aux(array, inferior, medium - 1, value));
 	}
+	else
+	{
 	return (medium);
+	}
 }
