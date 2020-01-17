@@ -52,7 +52,7 @@ int binary_search_aux(int *array, size_t inferior, size_t superior, int value)
 	{
 		return (-1);
 	}
-	if ((array[inferior] == value) && (inferior  == superior))
+	else if ((array[inferior] == value) && (inferior  == superior))
 	{
 		return (inferior);
 	}
