@@ -65,8 +65,5 @@ int binary_search_aux(int *array, size_t inferior, size_t superior, int value)
 	{
 		return (binary_search_aux(array, inferior, medium - 1, value));
 	}
-	else
-	{
-		return (medium);
-	}
+	return (medium);
 }
