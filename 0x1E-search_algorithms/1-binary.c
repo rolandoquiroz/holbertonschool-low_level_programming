@@ -41,12 +41,12 @@ int binary_search_aux(int *array, size_t inferior, size_t superior, int value)
 {
 	size_t i = 0, medium = 0;
 
-	printf("Searching in array: %d", array[inferior]);
+	printf("Searching in array: %lu", array[inferior]);
 
 	i = inferior + 1;
 	while (i <= superior)
 	{
-		printf(", %d", array[i]);
+		printf(", %lu", array[i]);
 		i++;
 	}
 	printf("\n");
@@ -59,7 +59,7 @@ int binary_search_aux(int *array, size_t inferior, size_t superior, int value)
 	{
 		return (inferior);
 	}
-	medium = (inferior + ((superior - inferior) / 2));
+	medium = ((inferior + superior) / 2);
 	if (value > array[medium])
 	{
 		return (binary_search_aux(array, medium + 1, superior, value));
