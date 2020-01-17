@@ -39,6 +39,7 @@ int binary_search_aux(int *array, size_t inferior, size_t superior, int value)
 	size_t i = 0, medium = 0;
 
 	printf("Searching in array: %d", array[inferior]);
+
 	i = inferior + 1;
 	while (i <= superior)
 	{
@@ -47,8 +48,14 @@ int binary_search_aux(int *array, size_t inferior, size_t superior, int value)
 	}
 	printf("\n");
 
-	if (inferior > superior)
+	if (superior == inferior)
+	{
 		return (-1);
+	}
+	if ((array[inferior] == value) && (inferior  == superior))
+	{
+		return (inferior);
+	}
 	medium = (inferior + superior) / 2;
 	if (value > array[medium])
 	{
