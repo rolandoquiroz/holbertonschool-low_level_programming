@@ -14,11 +14,11 @@
 
 int binary_search(int *array, size_t size, int value)
 {
-	if (array)
+	if (array == NULL)
 	{
-		return (binary_search_aux(array, 0, size - 1, value));
+		return (-1);
 	}
-	return (-1);
+	return (binary_search_aux(array, 0, size - 1, value));
 }
 
 /**
