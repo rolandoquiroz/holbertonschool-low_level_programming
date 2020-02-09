@@ -7,14 +7,15 @@
  */
 int _isdigit(int c)
 {
-int ret;
-if (c > 47 && c < 58)
-{
-ret = 1;
-}
-else
-{
-ret = 0;
-}
-return (ret);
+	int ret;
+
+	if (c > 47 && c < 58)
+	{
+		ret = 1;
+	}
+	else
+	{
+		ret = 0;
+	}
+	return (ret);
 }
