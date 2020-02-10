@@ -1,4 +1,3 @@
-#include <stdlib.h>
 #include <stdio.h>
 /**
  * main - Entry point
@@ -36,4 +35,3 @@ int main(void)
 	putchar(10);
 	return (0);
 }
-
