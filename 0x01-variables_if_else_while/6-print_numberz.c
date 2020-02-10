@@ -8,12 +8,11 @@
  */
 int main(void)
 {
-int num_char = 48;
-int i = 0;
-for (i = 0 ; i < 10 ; i++)
-{
-putchar(num_char + i);
-}
-putchar('\n');
-return (0);
+	int num_char = 48;
+	int i;
+
+	for (i = 0 ; i < 10 ; i++)
+		putchar(num_char + i);
+	putchar('\n');
+	return (0);
 }
