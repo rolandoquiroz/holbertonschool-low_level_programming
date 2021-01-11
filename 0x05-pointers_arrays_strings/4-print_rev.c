@@ -7,19 +7,17 @@
  */
 void print_rev(char *s)
 {
-int len, i;
-len = 0;
-while (s[len] != '\0')
-{
-++len;
-}
-len = len - 1;
-i = len;
-while (i >= 0)
-{
-_putchar(s[i]);
-i--;
-}
-_putchar(10);
-return;
+	int len = 0, i = 0;
+
+	while (s[len] != '\0')
+		++len;
+
+	len--;
+	i = len;
+	while (i >= 0)
+	{
+		_putchar(s[i]);
+		i--;
+	}
+	_putchar(10);
 }
