@@ -6,14 +6,10 @@
 */
 int _isalpha(int c)
 {
-int my_answer;
-if (((c > 96) && (c < 123)) || ((c > 64) && (c < 91)))
-{
-my_answer = 1;
-}
-else
-{
-my_answer = 0;
-}
-return (my_answer);
+	int my_answer = 0;
+
+	if (((c > 96) && (c < 123)) || ((c > 64) && (c < 91)))
+		my_answer = 1;
+
+	return (my_answer);
 }
