@@ -19,10 +19,10 @@ void jack_bauer(void)
 				{
 					_putchar(h);
 					_putchar(i);
-					_putchar(58);
+					_putchar(':');
 					_putchar(j);
 					_putchar(k);
-					_putchar(10);
+					_putchar('\n');
 				}
 				if ((j == 53) && (k == 57))
 				{
