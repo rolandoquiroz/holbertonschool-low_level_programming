@@ -1,7 +1,9 @@
 #include "holberton.h"
+
 /**
  * _atoi - Function that convert a string to an integer.
  * @s: *s String to be converted to integer
+ *
  * Return: int
  */
 int _atoi(char *s)

@@ -1,8 +1,9 @@
 #include "holberton.h"
+
 /**
  * _strlen - function that returns the length of a string.
+ * @s: string to be measured
  *
- * @s: char *s String to be processed
  * Return: the length of a string
  */
 int _strlen(char *s)

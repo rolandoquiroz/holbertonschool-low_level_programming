@@ -1,7 +1,9 @@
 #include "holberton.h"
+
 /**
  * rev_string -  reverse a string
  * @s: char
+ *
  * Return: void.
  */
 void rev_string(char *s)
@@ -27,5 +29,4 @@ void rev_string(char *s)
 		s[i] = r[i];
 		i++;
 	}
-
 }
