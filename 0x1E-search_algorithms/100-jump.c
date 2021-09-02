@@ -1,34 +1,60 @@
 #include "search_algos.h"
-#include <math.h>
+
 /**
-* jump_search - Searches for a value in a sorted array of integers using the
-*		Jump search algorithm.
-* @array: Pointer to the first element of the array to search in.
-* @size: Number of elements in array.
-* @value: Value to search for.
-* Return: First index where value is located or -1 if not.
-*/
+ * jump_search - This function searches for a value in
+ * a sorted array of integers using the Jump search algorithm.
+ * @array: Is a pointer to the first element of the array to search in.
+ * @size: Is the number of elements in array.
+ * @value: Is the value to search for.
+ * Return: The first index where value is located.
+ */
+
 int jump_search(int *array, size_t size, int value)
 {
-	unsigned int sqroot, i, j;
+	size_t i = 0;
+	int block = 0;
 
-	if (!array || !size || array[0] > value)
+	if (!array)
 		return (-1);
-	sqroot = sqrt(size);
-	for (i = 0; i < size; i += sqroot)
+	block = sqrt(size);
+	while (!(array[i] <= value && value <= array[block]))
 	{
-		if (array[i] >= value)
+		printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+		i = block;
+		block += sqrt(size);
+		if (block >= (int)size)
 			break;
-		printf("Value checked array[%d] = [%d]\n", i, array[i]);
 	}
-	printf("Value found between indexes [%d] and [%d]\n", i - sqroot, i);
-	for (j = i - sqroot; j <= i; j++)
+	printf("Value checked array[%ld] = [%d]\n", i, array[i]);
+	printf("Value found between indexes [%ld] and [%d]\n", i, block);
+	return (second_linear_search(array, i, block, size, value));
+}
+
+/**
+ * second_linear_search - This function searches for a value in an
+ * array of integers using the Linear search algorithm.
+ * @array: Is a pointer to the first element of the array to search in.
+ * @size: Is the number of elements in array.
+ * @value: Is the value to search for.
+ * @low: The first position of the subarray.
+ * @high: The last position of the subarray.
+ * Return: the first index where value is located.
+ */
+
+int second_linear_search(int *array, int low, int high, size_t size, int value)
+{
+	while (low <= high)
 	{
-		if (j >= size)
-			return (-1);
-		printf("Value checked array[%d] = [%d]\n", j, array[j]);
-		if (array[j] == value)
-			return (j);
+		if (array[low] == value)
+		{
+			printf("Value checked array[%d] = [%d]\n", low, array[low]);
+			return (low);
+		}
+		if (low < (int)size)
+			printf("Value checked array[%d] = [%d]\n", low, array[low]);
+		low++;
 	}
+	if (low < (int)size)
+		printf("Value checked array[%d] = [%d]\n", low, array[low]);
 	return (-1);
 }
