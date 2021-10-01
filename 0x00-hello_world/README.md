@@ -6,7 +6,7 @@
 ![#cisfun](https://s3.amazonaws.com/intranet-projects-files/holbertonschool-low_level_programming/212/cisfun.jpg "#cisfun")
 
 
-### **Learning Objectives**
+## Learning Objectives
 
 - Why C programming is awesome
 - Who invented C
@@ -22,7 +22,8 @@
 - How to find the right header to include in your source code when using a standard library function
 - How does the main function influence the return value of the program
 
-### **Requirements**
+## Requirements
+
 ### C
 
 - Allowed editors: vi, vim, emacs
@@ -42,13 +43,13 @@
 - All your files should end with a new line
 - The first line of all your files should be exactly #!/bin/bash
 
-### **More Info**
+## More Info
 ### Betty linter
 
 To run the Betty linter just with command betty <filename>:
 
-- Go to the Betty repository
-- Clone the repo to your local machine
+- Go to the [Betty](https://intranet.hbtn.io/rltoken/Iz34GJJ6iQ28q3sJXRUdkQ) repository
+- Clone the [repo](https://intranet.hbtn.io/rltoken/Iz34GJJ6iQ28q3sJXRUdkQ) to your local machine
 - cd into the Betty directory
 - Install the linter with sudo ./install.sh
 - emacs or vi a new file called betty, and copy the script below:
