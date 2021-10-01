@@ -56,8 +56,8 @@ More Info
 
 To run the Betty linter just with command `betty <filename>`:
 
-*   Go to the [Betty](https://intranet.hbtn.io/rltoken/Iz34GJJ6iQ28q3sJXRUdkQ "Betty") repository
-*   Clone the [repo](https://intranet.hbtn.io/rltoken/Iz34GJJ6iQ28q3sJXRUdkQ "repo") to your local machine
+*   Go to the [Betty](https://github.com/holbertonschool/Betty "Betty") repository
+*   Clone the [repo](https://github.com/holbertonschool/Betty "repo") to your local machine
 *   `cd` into the Betty directory
 *   Install the linter with `sudo ./install.sh`
 *   `emacs` or `vi` a new file called `betty`, and copy the script below:
