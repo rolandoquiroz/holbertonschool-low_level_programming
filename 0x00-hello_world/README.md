@@ -54,6 +54,7 @@ To run the Betty linter just with command betty <filename>:
 - cd into the Betty directory
 - Install the linter with sudo ./install.sh
 - emacs or vi a new file called betty, and copy the script below:
+
 ```bash
 #!/bin/bash
 # Simply a wrapper script to keep you from having to use betty-style
@@ -120,7 +121,9 @@ Which command can be used to compile a C source file?
 
 Which of the following are both valid comment syntaxes in ANSI C, and Betty-compliant?
 
-- [x] /* Comment */
+- [x] ```c
+/* Comment */
+```
 - [ ] // Comment
 - [ ] 
     /*
