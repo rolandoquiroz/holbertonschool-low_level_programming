@@ -94,38 +94,35 @@ In which category belongs the C programming language?
 
 What is the common extension for a C source file?
 
-- [] .txt
-
+- [ ] .txt
 - [x] .c
-
-- [] .cpp
-
-- [] .py
+- [ ] .cpp
+- [ ] .py
 
 ### Question #2
 
 What is the common extension for a C header file?
 
-- [] .header
-- [] .hpp
+- [ ] .header
+- [ ] .hpp
 - [x] .h
-- [] .ch
+- [ ] .ch
 
 ### Question #3
 
 Which command can be used to compile a C source file?
 
-- [] c-compiler
+- [ ] c-compiler
 - [x] gcc
-- [] bash
+- [ ] bash
 
 ### Question #4
 
 Which of the following are both valid comment syntaxes in ANSI C, and Betty-compliant?
 
 - [x] /* Comment */
-- [] // Comment
-- [] /*
+- [ ] // Comment
+- [ ] /*
      Comment
      */
 
@@ -133,19 +130,15 @@ Which of the following are both valid comment syntaxes in ANSI C, and Betty-comp
        * Comment
        */
 
-- [] # Comment
-- [] /* Comment /* nested */ */
+- [ ] # Comment
+- [ ] /* Comment /* nested */ */
 
 ### Question #5
 
 What are the different steps to form an executable file from C source code
 
-- [] Interpretation, compilation and assembly
-
+- [ ] Interpretation, compilation and assembly
 - [x] Preprocessing, compilation, assembly, and linking
-
-- [] Interpretation, assembly and compilation
-
-- [] Compilation and linking
-
-- [] Preprocessing and compilation
+- [ ] Interpretation, assembly and compilation
+- [ ] Compilation and linking
+- [ ] Preprocessing and compilation
