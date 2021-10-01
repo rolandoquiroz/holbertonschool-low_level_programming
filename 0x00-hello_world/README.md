@@ -9,7 +9,7 @@
 ## Learning Objectives
 ----------------------
 
-At the end of this project, you are expected to be able to [explain to anyone](https://intranet.hbtn.io/rltoken/eJZ-xVeCra6EqIiwBOYYVg "explain to anyone"), **without the help of Google**:
+At the end of this project, you are expected to be able to [explain to anyone](https://fs.blog/2021/02/feynman-learning-technique/ "explain to anyone"), **without the help of Google**:
 
 ### General
 
