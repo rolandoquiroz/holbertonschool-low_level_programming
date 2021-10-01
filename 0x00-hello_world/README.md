@@ -87,7 +87,7 @@ You can now type betty <filename> to run the Betty linter!
 
 In which category belongs the C programming language?
 
-- [] Interpreted language
+- [ ] Interpreted language
 - [x] Compiled language
 
 ### Question #1
