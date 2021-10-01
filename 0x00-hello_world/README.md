@@ -173,7 +173,7 @@ Tasks
 -----
 
 | # | Name | File | Done |
-|---|------|------|------|
+|---|------|------|:------:|
 | 0 |  Preprocessor     |   0-preprocessor   |   :heavy_check_mark:   |
 | 1 |  Compiler     |   1-compiler   |   :heavy_check_mark:   |
 | 2 |  Assembler   |   2-assembler   |   :heavy_check_mark:   |
