@@ -128,7 +128,7 @@ Which command can be used to compile a C source file?
 
 Which of the following are both valid comment syntaxes in ANSI C, and Betty-compliant?
 
-- :heavy_check_mark:
+- :white_check_mark:
 ```c
     /* Comment */
 ```
@@ -142,7 +142,7 @@ Which of the following are both valid comment syntaxes in ANSI C, and Betty-comp
     Comment
     */
 ```
-- :check_mark:
+- :white_check_mark:
 ```c
    /*
     * Comment
