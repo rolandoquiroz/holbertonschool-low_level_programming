@@ -184,3 +184,8 @@ Tasks
 | 7 |  What happens when you type gcc main.c    |   Blog post   |  :heavy_check_mark:    |
 | 8 | Intel   |   100-intel   |  :heavy_check_mark:    |
 | 9 | UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity  |  101-quote.c    |  :heavy_check_mark:    |
+
+Repo:
+-----------
+- GitHub repository: holbertonschool-low_level_programming
+- Directory: 0x00-hello_world
