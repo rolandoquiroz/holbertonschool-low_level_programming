@@ -174,7 +174,7 @@ Tasks
 
 | # | Name | File | Done |
 |---|------|------|------|
-| 0 |  Preprocessor     |   0-preprocessor   |      |
+| 0 |  Preprocessor     |   0-preprocessor   |  [x]    |
 | 1 |  Compiler     |   1-compiler   |      |
 | 2 |  Assembler   |   2-assembler   |      |
 | 3 |  Name    |   3-name   |      |
