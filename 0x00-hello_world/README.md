@@ -121,28 +121,34 @@ Which command can be used to compile a C source file?
 
 Which of the following are both valid comment syntaxes in ANSI C, and Betty-compliant?
 
-- [x]   ```
-        /* Comment */
-        ```
-- [ ]   ```
-        // Comment
-        ```
-- [ ]   ```
-        /*
-        Comment
-        */
-        ```
-- [x]   ```
-        /*
-         * Comment
-         */
-        ```
-- [ ]   ```
-        # Comment
-        ```
-- [ ]   ```
-        /* Comment /* nested */ */
-        ```
+- [x]
+```c
+    /* Comment */
+```
+- [ ]
+```c
+    // Comment
+```
+- [ ]
+```c
+    /*
+    Comment
+    */
+```
+- [x]
+```c
+   /*
+    * Comment
+    */
+```
+- [ ]
+```c
+    # Comment
+```
+- [ ]
+```c
+    /* Comment /* nested */ */
+```
 
 ### Question #5
 
