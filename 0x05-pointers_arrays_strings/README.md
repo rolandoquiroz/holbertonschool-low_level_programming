@@ -221,3 +221,4 @@ Repo:
 -----------
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/rolandoquiroz/holbertonschool-low_level_programming)
 - Directory: [0x05-pointers_arrays_strings](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/tree/0x05-pointers_arrays_strings)
+- Code language: `c` (project based) 
