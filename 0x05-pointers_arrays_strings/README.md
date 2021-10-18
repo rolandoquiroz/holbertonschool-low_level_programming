@@ -203,7 +203,7 @@ Tasks
 -----
 
 | # | Name | File | Done |
-|---|------|------|:------:|
+|:---:|------|------|:------:|
 | 0 |  98 Battery st. | 0-reset_to_98.c  |   :heavy_check_mark:   |
 | 1 |  Don't swap horses in crossing a stream  |   1-swap.c  | :heavy_check_mark:   |
 | 2 |  This report, by its very length, defends itself against the risk of being read    |   2-strlen.c   |   :heavy_check_mark:   |
