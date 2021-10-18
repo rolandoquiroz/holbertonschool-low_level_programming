@@ -204,18 +204,20 @@ Tasks
 
 | # | Name | File | Done |
 |---|------|------|:------:|
-| 0 |  Preprocessor     |   0-preprocessor   |   :heavy_check_mark:   |
-| 1 |  Compiler     |   1-compiler   |   :heavy_check_mark:   |
-| 2 |  Assembler   |   2-assembler   |   :heavy_check_mark:   |
-| 3 |  Name    |   3-name   |   :heavy_check_mark:   |
-| 4 |  Hello, puts   |   4-puts.c   |  :heavy_check_mark:    |
-| 5 |  Hello, printf    |  5-printf.c    |   :heavy_check_mark:   |
-| 6 |  Size is not grandeur, and territory does not make a nation     |   6-size.c    |  :heavy_check_mark:   |
-| 7 |  What happens when you type gcc main.c    |   Blog post   |  :heavy_check_mark:    |
-| 8 | Intel   |   100-intel   |  :heavy_check_mark:    |
-| 9 | UNIX is basically a simple operating system, but you have to be a genius to understand the simplicity  |  101-quote.c    |  :heavy_check_mark:    |
+| 0 |  98 Battery st. | 0-reset_to_98.c  |   :heavy_check_mark:   |
+| 1 |  Don't swap horses in crossing a stream  |   1-swap.c  | :heavy_check_mark:   |
+| 2 |  This report, by its very length, defends itself against the risk of being read    |   2-strlen.c   |   :heavy_check_mark:   |
+| 3 |  I do not fear computers. I fear the lack of them     |   3-puts.c   |   :heavy_check_mark:   |
+| 4 |  I can only go one way. I've not got a reverse gear   |   4-print_rev.c   |  :heavy_check_mark:    |
+| 5 |  A good engineer thinks in reverse and asks himself about the stylistic consequences of the components and systems he proposes     |  5-rev_string.c    |   :heavy_check_mark:   |
+| 6 |  Half the lies they tell about me aren't true   |   6-puts2.c    |  :heavy_check_mark:   |
+| 7 |  Winning is only half of it. Having fun is the other half  |  7-puts_half.c  |  :heavy_check_mark:    |
+| 8 |  Arrays are not pointers  |   8-print_array.c  |  :heavy_check_mark:    |
+| 9 | strcpy |  9-strcpy.c  |  :heavy_check_mark:    |
+| 10 |  Great leaders are willing to sacrifice the numbers to save the people. Poor leaders sacrifice the people to save the numbers  |   100-atoi.c   |   :heavy_check_mark:   |
+| 11 |  Don't hate the hacker, hate the code  |   101-keygen.c  |   :heavy_check_mark:   |
 
 Repo:
 -----------
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/rolandoquiroz/holbertonschool-low_level_programming)
-- Directory: [0x00-hello_world](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/tree/master/0x00-hello_world)
+- Directory: [0x05-pointers_arrays_strings](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/tree/0x05-pointers_arrays_strings)
