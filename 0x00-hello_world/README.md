@@ -52,7 +52,7 @@ Requirements
 ## Quiz questions
 
 <details>
-    <summary>Click me!</summary>
+    <summary>Show/Hide</summary>
 
 ### Question #0
 
