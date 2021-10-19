@@ -47,7 +47,7 @@ You do not need to learn about pointers to functions, pointers to pointers, mult
 ## Quiz questions
 
 <details>
-    <summary>Clicx to expand!</summary>
+    <summary>Click to expand!</summary>
 
 ### Question #0
 
