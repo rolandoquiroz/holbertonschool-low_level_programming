@@ -202,9 +202,9 @@ What is the equivalent of typing `arr[2]`?
 Tasks
 -----
 
-| # | Name | File | Done |
+|  #  | Name | File | Done |
 |:---:|------|------|:------:|
-| 0 |  98 Battery st. | 0-reset_to_98.c  |   :heavy_check_mark:   |
+| 0 |  98 Battery st.  |  0-reset_to_98.c  |  :heavy_check_mark:  |
 | 1 |  Don't swap horses in crossing a stream  |   1-swap.c  | :heavy_check_mark:   |
 | 2 |  This report, by its very length, defends itself against the risk of being read    |   2-strlen.c   |   :heavy_check_mark:   |
 | 3 |  I do not fear computers. I fear the lack of them     |   3-puts.c   |   :heavy_check_mark:   |
@@ -220,5 +220,5 @@ Tasks
 Repo:
 -----------
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/rolandoquiroz/holbertonschool-low_level_programming)
-- Directory: [0x05-pointers_arrays_strings](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/tree/0x05-pointers_arrays_strings)
+- Directory: [0x05-pointers_arrays_strings](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/tree/master/0x05-pointers_arrays_strings)
 - Code language: `c` (project based) 
