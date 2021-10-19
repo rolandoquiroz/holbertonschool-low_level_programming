@@ -10,7 +10,7 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int i, j, k;
+	unsigned int i, j, k;
 
 	i = 0;
 	while (haystack[i] != '\0')
