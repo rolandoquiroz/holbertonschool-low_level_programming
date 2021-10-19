@@ -52,7 +52,7 @@ Requirements
 ## Quiz questions
 
 <details>
-    <summary>Click to expand!</summary>
+    <summary>Click me!</summary>
 
 ### Question #0
 
