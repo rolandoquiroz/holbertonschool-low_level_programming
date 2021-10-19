@@ -163,7 +163,7 @@ Tasks
 -----
 
 |  #  | Name | File | Header file | Main file| Done |
-|:---:|------|------|:------:|
+|:---:|------|------|-------------|----------|:------:|
 | 0 |  memset  |  0-memset.c | holberton.h | 0-main.c | :heavy_check_mark:  |
 | 1 |  memcpy  |  1-memcpy.c | holberton.h | 1-main.c | :heavy_check_mark:   |
 | 2 |  strchr  |  2-strchr.c | holberton.h | 2-main.c | :heavy_check_mark:   |
