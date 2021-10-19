@@ -28,6 +28,4 @@ void print_diagsums(int *a, int size)
 		i = i + size - 1;
 	}
 	printf("%d, %d\n", acx, acy);
-
-	return;
 }
