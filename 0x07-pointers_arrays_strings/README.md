@@ -155,8 +155,6 @@ What is stored inside a pointer to a pointer to an int?
 - [ ] An int
 - [x] An address where an address is stored
 
-
-
 </details>
 
 * * *
@@ -166,21 +164,19 @@ Tasks
 
 |  #  | Name | File | Done |
 |:---:|------|------|:------:|
-| 0 |  98 Battery st.  |  0-reset_to_98.c  |  :heavy_check_mark:  |
-| 1 |  Don't swap horses in crossing a stream  |   1-swap.c  | :heavy_check_mark:   |
-| 2 |  This report, by its very length, defends itself against the risk of being read    |   2-strlen.c   |   :heavy_check_mark:   |
-| 3 |  I do not fear computers. I fear the lack of them     |   3-puts.c   |   :heavy_check_mark:   |
-| 4 |  I can only go one way. I've not got a reverse gear   |   4-print_rev.c   |  :heavy_check_mark:    |
-| 5 |  A good engineer thinks in reverse and asks himself about the stylistic consequences of the components and systems he proposes     |  5-rev_string.c    |   :heavy_check_mark:   |
-| 6 |  Half the lies they tell about me aren't true   |   6-puts2.c    |  :heavy_check_mark:   |
-| 7 |  Winning is only half of it. Having fun is the other half  |  7-puts_half.c  |  :heavy_check_mark:    |
-| 8 |  Arrays are not pointers  |   8-print_array.c  |  :heavy_check_mark:    |
-| 9 | strcpy |  9-strcpy.c  |  :heavy_check_mark:    |
-| 10 |  Great leaders are willing to sacrifice the numbers to save the people. Poor leaders sacrifice the people to save the numbers  |   100-atoi.c   |   :heavy_check_mark:   |
-| 11 |  Don't hate the hacker, hate the code  |   101-keygen.c  |   :heavy_check_mark:   |
+| 0 |  memset  |  0-memset.c |  :heavy_check_mark:  |
+| 1 |  memcpy  |  1-memcpy.c | :heavy_check_mark:   |
+| 2 |  strchr  |  2-strchr.c |   :heavy_check_mark:   |
+| 3 |  strspn  |  3-strspn.c |   :heavy_check_mark:   |
+| 4 |  strpbrk  |  4-strpbrk.c  |  :heavy_check_mark:    |
+| 5 |  strstr  |  5-strstr.c  |   :heavy_check_mark:   |
+| 6 |  Chess is mental torture  |  7-print_chessboard.c   |  :heavy_check_mark:   |
+| 7 |  The line of life is a ragged diagonal between duty and desire  |  8-print_diagsums.c  |  :heavy_check_mark:    |
+| 8 |  Double pointer, double fun  |  9-set_string.c  |  :heavy_check_mark:    |
+| 9 | My primary goal of hacking was the intellectual curiosity, the seduction of adventure  |  101-crackme_password  |  :heavy_check_mark:    |
 
 Repo:
 -----------
 - GitHub repository: [holbertonschool-low_level_programming](https://github.com/rolandoquiroz/holbertonschool-low_level_programming)
-- Directory: [0x05-pointers_arrays_strings](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/tree/master/0x05-pointers_arrays_strings)
+- Directory: [0x05-pointers_arrays_strings](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/tree/master/0x07-pointers_arrays_strings)
 - Code language: `c` (project based) 
