@@ -11,21 +11,23 @@
  */
 void print_diagsums(int *a, int size)
 {
-int i, acx, acy;
-acx = 0;
-i = 0;
-while (i < size * size)
-{
-acx = acx + a[i];
-i = i + size + 1;
-}
-acy = 0;
-i = size - 1;
-while (i < (size * size - 1))
-{
-acy = acy + a[i];
-i = i + size - 1;
-}
-printf("%d, %d\n", acx, acy);
-return;
+	int i, acx, acy;
+
+	acx = 0;
+	i = 0;
+	while (i < size * size)
+	{
+		acx = acx + a[i];
+		i = i + size + 1;
+	}
+	acy = 0;
+	i = size - 1;
+	while (i < (size * size - 1))
+	{
+		acy = acy + a[i];
+		i = i + size - 1;
+	}
+	printf("%d, %d\n", acx, acy);
+
+	return;
 }
