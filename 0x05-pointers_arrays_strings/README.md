@@ -46,6 +46,9 @@ You do not need to learn about pointers to functions, pointers to pointers, mult
 
 ## Quiz questions
 
+<details>
+    <summary>Clicx to expand!</summary>
+
 ### Question #0
 
 What is the size of a pointer to a `char` (on a 64-bit architecture)
@@ -196,6 +199,8 @@ What is the equivalent of typing `arr[2]`?
 - [ ] arr + 2
 - [ ] *arr + 2
 - [x] *(arr + 2)
+
+</details>
 
 * * *
 
