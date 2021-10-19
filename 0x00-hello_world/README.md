@@ -51,6 +51,9 @@ Requirements
 
 ## Quiz questions
 
+<details>
+    <summary>Click to expand!</summary>
+
 ### Question #0
 
 In which category belongs the C programming language?
@@ -126,6 +129,8 @@ What are the different steps to form an executable file from C source code
 - [ ] Interpretation, assembly and compilation
 - [ ] Compilation and linking
 - [ ] Preprocessing and compilation
+
+</details>
 
 * * *
 
