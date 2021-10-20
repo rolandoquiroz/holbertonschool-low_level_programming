@@ -1,6 +1,6 @@
 #include "holberton.h"
 /**
- *watcher - Function that calculates a natural sqr if n > 1
+ *_sqrt_n_greater_than_one - Function that calculates a natural sqr if n > 1
  *
  *@n: int n
  *
@@ -8,12 +8,12 @@
  *
  *Return: A natural square root
  */
-int watcher(int n, int l)
+int _sqrt_n_greater_than_one(int n, int l)
 {
 	if (l * l == n)
 		return (l);
 	else if (l * l < n)
-		return (watcher(n, l + 1));
+		return (_sqrt_n_greater_than_one(n, l + 1));
 	else
 		return (-1);
 }
@@ -29,5 +29,5 @@ int _sqrt_recursion(int n)
 	if (n == 0 || n == 1)
 		return (n);
 	else
-		return (watcher(n, 1));
+		return (_sqrt_n_greater_than_one(n, 1));
 }
