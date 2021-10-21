@@ -8,7 +8,7 @@
  *
  *Return: int natural square root of n
  */
-int _sqrt_when_n_greater_than_one(int m, int n)
+int _sqrt_when_n_greater_than_one(int m, int n) 
 {
 	if (m * m == n)
 		return (m);
