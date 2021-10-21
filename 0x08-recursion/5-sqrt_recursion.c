@@ -1,12 +1,10 @@
 #include "holberton.h"
 /**
  *_sqrt_when_n_is_greater_than_one - Calculate the natural sqrt for n, if n > 1
+ *@m: Candidate to be the natural square root of a n
+ *@n: Number to calculate its natural square root
  *
- *@m: int m candidate to be the natural square root of a n
- *
- *@n: int n number to calculate its natural square root
- *
- *Return: int natural square root of n
+ *Return: Natural square root of n | -1  if n does not have natural square root
  */
 int _sqrt_when_n_is_greater_than_one(int m, int n)
 {
@@ -17,11 +15,10 @@ int _sqrt_when_n_is_greater_than_one(int m, int n)
 	return (-1);
 }
 /**
- * _sqrt_recursion - Function that returns the natural square root of a number.
+ * _sqrt_recursion - Function that returns the natural square root of a number
+ * @n: Number to calculate its natural square root
  *
- * @n: int n number to calculate its natural square root
- *
- * Return: int the natural square root of a n.
+ * Return: _sqrt_when_n_is_greater_than_one(2, n)
  */
 int _sqrt_recursion(int n)
 {

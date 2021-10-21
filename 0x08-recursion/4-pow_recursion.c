@@ -1,12 +1,10 @@
 #include "holberton.h"
 /**
- * _pow_recursion - Function that returns the value of x^y.
+ * _pow_recursion - Function that calculates the value of x ^ y
+ * @x: Base
+ * @y: Exponent
  *
- * @x: int x is the base
- *
- * @y: int y is the exponent
- *
- * Return: int
+ * Return: x ^ y | -1 If y < 0
  */
 int _pow_recursion(int x, int y)
 {

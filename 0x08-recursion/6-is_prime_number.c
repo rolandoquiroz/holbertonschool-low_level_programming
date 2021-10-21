@@ -1,12 +1,10 @@
 #include "holberton.h"
 /**
  * _prime - Evaluates whether a number is or not is a prime
+ * @m: Number to help to check if n is a prime number
+ * @n: Number to be evaluated as prime number
  *
- * @m: int m is the number to help to check if n is prime
- *
- * @n: int n is the number to be evaluated
- *
- * Return: an integer
+ * Return: 1 if n is a prime number | 0 if n is not a prime number
  */
 int _prime(int m, int n)
 {
@@ -19,10 +17,9 @@ int _prime(int m, int n)
 
 /**
  * is_prime_number - Function that answer if the number is a prime
+ * @n: Number to be evaluated as prime number
  *
- * @n: int n is the number to be evaluated
- *
- * Return: 1 - Prime number | 0 - Not prime number.
+ * Return: _prime(2, n)
  */
 int is_prime_number(int n)
 {

@@ -1,9 +1,8 @@
 #include "holberton.h"
 
 /**
- * _strlen_recursion - Function that returns the length of a string.
- *
- * @s: char *s String to be measured
+ * _strlen_recursion - Function that returns the length of a string
+ * @s: String to be measured
  *
  * Return: int
  */
@@ -16,12 +15,10 @@ int _strlen_recursion(char *s)
 
 /**
  * _palindrome - Evaluates if a string is a palindrome and or not.
+ * @s: String to be evaluated as palindrome
+ * @l: Length of s
  *
- * @s: char *s is the string to be evaluated
- *
- * @l: int l long of the string to be evaluated
- *
- * Return: 1 - Palindrome string  | 0 - Not Palindrome string
+ * Return: 1 if s is a palindrome string  | 0 if s is not a Palindrome string
  */
 int _palindrome(char *s, int l)
 {
@@ -33,11 +30,10 @@ int _palindrome(char *s, int l)
 }
 
 /**
- * is_palindrome - Returns 1 if a string is a palindrome and 0 if not.
-y *
- * @s: char *s is the string to be checked
+ * is_palindrome - Returns 1 if a string is a palindrome and 0 if not
+ * @s: String to be checked
  *
- * Return: 1 - Palindrome string  | 0 - Not Palindrome string
+ * Return: _palindrome(s, _strlen_recursion(s))
  */
 int is_palindrome(char *s)
 {
