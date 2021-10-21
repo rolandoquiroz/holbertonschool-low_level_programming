@@ -29,5 +29,5 @@ int _sqrt_recursion(int n)
 	if (n == 0 || n == 1)
 		return (n);
 	else
-		return (_sqrt_when_n_greater_than_one(1, n));
+		return (_sqrt_when_n_greater_than_one(2, n));
 }
