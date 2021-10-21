@@ -2,7 +2,6 @@
 
 /**
  * partition - Partition the array
- *
  * @a: Array to be partitioned
  * @l: Starting point of array
  * @h: Ending point of array
@@ -41,7 +40,6 @@ int partition(int *a, ssize_t l, ssize_t h, size_t size)
 
 /**
  * quicksort - Quick sort recursive function and create pivots
- *
  * @arr: Array to be sorted
  * @low: bottom index of sorting array
  * @high: top index of sorting array
@@ -62,8 +60,7 @@ void quicksort(int *arr, ssize_t low, ssize_t high, size_t size)
 }
 
 /**
- * quick_sort - Sorts an array of ints using the Quick sort Lomuto
- *
+ * quick_sort - Sorts an array of ints using the Quick sort Lomuto algorithm
  * @array: Array to be sorted
  * @size: Size of the array
  *

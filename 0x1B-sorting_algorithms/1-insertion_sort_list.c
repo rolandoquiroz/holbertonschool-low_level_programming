@@ -1,8 +1,8 @@
 #include "sort.h"
 /**
- * insertion_sort_list - Sorts a DLL of ints using the Insertion sort algorithm
- *
- * @list: DLL to be sorted
+ * insertion_sort_list - Sorts a doubly linked list of integers
+ * in ascending order using the Insertion sort algorithm
+ * @list: Doubly linked list of integers in ascending order to be sorted
  *
  * Return: void
  */
