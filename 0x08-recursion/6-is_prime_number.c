@@ -2,7 +2,7 @@
 /**
  * _prime - Evaluates whether a number is or not is a prime
  *
- * @m: int m is the number to make trie
+ * @m: int m is the number to help to check if n is prime
  *
  * @n: int n is the number to be evaluated
  *
