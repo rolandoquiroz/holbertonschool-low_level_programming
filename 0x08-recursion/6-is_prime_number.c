@@ -2,21 +2,19 @@
 /**
  * _prime - Evaluates whether a number is or not is a prime
  *
- * @n: int n is the number to be evaluated
+ * @m: int m is the number to make trie
  *
- * @l: int l is the number to make tries
+ * @n: int n is the number to be evaluated
  *
  * Return: an integer
  */
-int _prime(int n, int l)
+int _prime(int m, int n)
 {
-	if (n < 2)
+	if (n % m == 0 && n != m)
 		return (0);
-	else if (n % l == 0 && n != l)
-		return (0);
-	else if (n == l)
+	else if (n == m)
 		return (1);
-	return (_prime(n, l + 1));
+	return (_prime(m + 1, n));
 }
 
 /**
@@ -28,5 +26,8 @@ int _prime(int n, int l)
  */
 int is_prime_number(int n)
 {
-	return (_prime(n, 2));
+	if (n < 2)
+		return (0);
+	else
+		return (_prime(2, n));
 }
