@@ -197,16 +197,15 @@ Tasks
 
 |  #  | Name | File | Header file | Main file| Done |
 |:---:|------|------|-------------|----------|:------:|
-| 0 |  memset  |  0-memset.c | holberton.h | 0-main.c | :heavy_check_mark:  |
-| 1 |  memcpy  |  1-memcpy.c | holberton.h | 1-main.c | :heavy_check_mark:   |
-| 2 |  strchr  |  2-strchr.c | holberton.h | 2-main.c | :heavy_check_mark:   |
-| 3 |  strspn  |  3-strspn.c | holberton.h | 3-main.c | :heavy_check_mark:   |
-| 4 |  strpbrk  |  4-strpbrk.c  | holberton.h | 4-main.c | :heavy_check_mark:    |
-| 5 |  strstr  |  5-strstr.c  | holberton.h | 5-main.c | :heavy_check_mark:   |
-| 6 |  Chess is mental torture  |  7-print_chessboard.c   |  holberton.h  | 7-main.c | :heavy_check_mark:   |
-| 7 |  The line of life is a ragged diagonal between duty and desire  |  8-print_diagsums.c  |  holberton.h |  8-main.c  | :heavy_check_mark:    |
-| 8 |  Double pointer, double fun  |  9-set_string.c  |  holberton.h |  9-main.c | :heavy_check_mark:    |
-| 9 | My primary goal of hacking was the intellectual curiosity, the seduction of adventure  |  101-crackme_password  |  |  |:heavy_check_mark:    |
+| 0 |  She locked away a secret, deep inside herself, something she once knew to be true... but chose to forget   |  0-puts_recursion.c | holberton.h | 0-main.c | :heavy_check_mark:  |
+| 1 |  Why is it so important to dream? Because, in my dreams we are together  |  1-print_rev_recursion.c  | holberton.h | 1-main.c | :heavy_check_mark:   |
+| 2 |  Dreams feel real while we're in them. It's only when we wake up that we realize something was actually strange   |  2-strlen_recursion.c | holberton.h | 2-main.c | :heavy_check_mark:   |
+| 3 |  You mustn't be afraid to dream a little bigger, darling  |  3-factorial.c | holberton.h | 3-main.c | :heavy_check_mark:   |
+| 4 |  Once an idea has taken hold of the brain it's almost impossible to eradicate   |  4-pow_recursion.c  | holberton.h | 4-main.c | :heavy_check_mark:    |
+| 5 |  Your subconscious is looking for the dreamer   |  5-sqrt_recursion.c  | holberton.h | 5-main.c | :heavy_check_mark:   |
+| 6 |  Inception. Is it possible?   |  6-is_prime_number.c   |  holberton.h  | 7-main.c | :heavy_check_mark:   |
+| 7 |  They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything   |  100-is_palindrome.c  |  holberton.h |  8-main.c  | :heavy_check_mark:    |
+| 8 |   Inception. Now, before you bother telling me it's impossible...   |  101-wildcmp.c  |  holberton.h |  9-main.c | :heavy_check_mark:    |
 
 Repo:
 -----------
