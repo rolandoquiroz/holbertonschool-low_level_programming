@@ -12,10 +12,9 @@ int _prime(int m, int n)
 {
 	if (n % m == 0 && n != m)
 		return (0);
-	else if (n == m)
+	if (n == m)
 		return (1);
-	else
-		return (_prime(m + 1, n));
+	return (_prime(m + 1, n));
 }
 
 /**
@@ -29,6 +28,5 @@ int is_prime_number(int n)
 {
 	if (n < 2)
 		return (0);
-	else
-		return (_prime(2, n));
+	return (_prime(2, n));
 }
