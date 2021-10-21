@@ -204,8 +204,8 @@ Tasks
 | 4 |  Once an idea has taken hold of the brain it's almost impossible to eradicate   |  4-pow_recursion.c  | holberton.h | 4-main.c | :heavy_check_mark:    |
 | 5 |  Your subconscious is looking for the dreamer   |  5-sqrt_recursion.c  | holberton.h | 5-main.c | :heavy_check_mark:   |
 | 6 |  Inception. Is it possible?   |  6-is_prime_number.c   |  holberton.h  | 7-main.c | :heavy_check_mark:   |
-| 7 |  They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything   |  100-is_palindrome.c  |  holberton.h |  8-main.c  | :heavy_check_mark:    |
-| 8 |   Inception. Now, before you bother telling me it's impossible...   |  101-wildcmp.c  |  holberton.h |  9-main.c | :heavy_check_mark:    |
+| 7 |  They say we only use a fraction of our brain's true potential. Now that's when we're awake. When we're asleep, we can do almost anything   |  100-is_palindrome.c  |  holberton.h |  100-main.c  | :heavy_check_mark:    |
+| 8 |   Inception. Now, before you bother telling me it's impossible...   |  101-wildcmp.c  |  holberton.h |  101-main.c | :heavy_check_mark:    |
 
 Repo:
 -----------
