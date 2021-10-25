@@ -17,13 +17,13 @@ void insertion_sort_list(listint_t **list)
 
 	while (curr)
 	{
-		while ((curr->prev != NULL) &&
-		       (curr->prev->n > curr->n))
+		while ((curr->prev != NULL) && (curr->prev->n > curr->n))
 		{
 			curr->prev->next = curr->next;
 
 			if (curr->next != NULL)
 				curr->next->prev = curr->prev;
+
 			curr->next = curr->prev;
 			curr->prev = curr->prev->prev;
 			curr->next->prev = curr;
