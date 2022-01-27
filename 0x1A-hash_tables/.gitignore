@@ -54,6 +54,7 @@ dkms.conf
 # Visual Studio Code
 .vscode
 
+# Project executable files
 a
 b
 c
