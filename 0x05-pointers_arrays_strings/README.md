@@ -210,9 +210,9 @@ Tasks
 |  #  | Name | File | Done |
 |:---:|------|------|:------:|
 | 0 |  98 Battery st.  |  [0-reset_to_98.c](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/blob/master/0x05-pointers_arrays_strings/0-reset_to_98.c "0-reset_to_98.c")  |  :heavy_check_mark:  |
-| 1 |  Don't swap horses in crossing a stream  |   1-swap.c  | :heavy_check_mark:   |
-| 2 |  This report, by its very length, defends itself against the risk of being read    |   2-strlen.c   |   :heavy_check_mark:   |
-| 3 |  I do not fear computers. I fear the lack of them     |   3-puts.c   |   :heavy_check_mark:   |
+| 1 |  Don't swap horses in crossing a stream  |  [1-swap.c](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/blob/master/0x05-pointers_arrays_strings/1-swap.c "1-swap.c")  | :heavy_check_mark:   |
+| 2 |  This report, by its very length, defends itself against the risk of being read    |   [2-strlen.c](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/blob/master/0x05-pointers_arrays_strings/2-strlen.c "2-strlen.c")  |   :heavy_check_mark:   |
+| 3 |  I do not fear computers. I fear the lack of them     |   [3-puts.c](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/blob/master/0x05-pointers_arrays_strings/3-puts.c "3-puts.c")   |   :heavy_check_mark:   |
 | 4 |  I can only go one way. I've not got a reverse gear   |   4-print_rev.c   |  :heavy_check_mark:    |
 | 5 |  A good engineer thinks in reverse and asks himself about the stylistic consequences of the components and systems he proposes     |  5-rev_string.c    |   :heavy_check_mark:   |
 | 6 |  Half the lies they tell about me aren't true   |   6-puts2.c    |  :heavy_check_mark:   |
