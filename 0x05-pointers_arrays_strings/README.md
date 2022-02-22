@@ -213,14 +213,14 @@ Tasks
 | 1 |  Don't swap horses in crossing a stream  |  [1-swap.c](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/blob/master/0x05-pointers_arrays_strings/1-swap.c "1-swap.c")  | :heavy_check_mark:   |
 | 2 |  This report, by its very length, defends itself against the risk of being read    |   [2-strlen.c](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/blob/master/0x05-pointers_arrays_strings/2-strlen.c "2-strlen.c")  |   :heavy_check_mark:   |
 | 3 |  I do not fear computers. I fear the lack of them     |   [3-puts.c](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/blob/master/0x05-pointers_arrays_strings/3-puts.c "3-puts.c")   |   :heavy_check_mark:   |
-| 4 |  I can only go one way. I've not got a reverse gear   |   4-print_rev.c   |  :heavy_check_mark:    |
-| 5 |  A good engineer thinks in reverse and asks himself about the stylistic consequences of the components and systems he proposes     |  5-rev_string.c    |   :heavy_check_mark:   |
-| 6 |  Half the lies they tell about me aren't true   |   6-puts2.c    |  :heavy_check_mark:   |
-| 7 |  Winning is only half of it. Having fun is the other half  |  7-puts_half.c  |  :heavy_check_mark:    |
-| 8 |  Arrays are not pointers  |   8-print_array.c  |  :heavy_check_mark:    |
-| 9 | strcpy |  9-strcpy.c  |  :heavy_check_mark:    |
-| 10 |  Great leaders are willing to sacrifice the numbers to save the people. Poor leaders sacrifice the people to save the numbers  |   100-atoi.c   |   :heavy_check_mark:   |
-| 11 |  Don't hate the hacker, hate the code  |   101-keygen.c  |   :heavy_check_mark:   |
+| 4 |  I can only go one way. I've not got a reverse gear   |   [4-print_rev.c](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/blob/master/0x05-pointers_arrays_strings/4-print_rev.c "4-print_rev.c")   |  :heavy_check_mark:    |
+| 5 |  A good engineer thinks in reverse and asks himself about the stylistic consequences of the components and systems he proposes     |  [5-rev_string.c](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/blob/master/0x05-pointers_arrays_strings/5-rev_string.c "5-rev_string.c")    |   :heavy_check_mark:   |
+| 6 |  Half the lies they tell about me aren't true   |   [6-puts2.c](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/blob/master/0x05-pointers_arrays_strings/6-puts2.c "6-puts2.c")    |  :heavy_check_mark:   |
+| 7 |  Winning is only half of it. Having fun is the other half  |  [7-puts_half.c](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/blob/master/0x05-pointers_arrays_strings/7-puts_half.c "7-puts_half.c")  |  :heavy_check_mark:    |
+| 8 |  Arrays are not pointers  |   [8-print_array.c](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/blob/master/0x05-pointers_arrays_strings/8-print_array.c "8-print_array.c")  |  :heavy_check_mark:    |
+| 9 | strcpy |  [9-strcpy.c](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/blob/master/0x05-pointers_arrays_strings/9-strcpy.c "9-strcpy.c")  |  :heavy_check_mark:    |
+| 10 |  Great leaders are willing to sacrifice the numbers to save the people. Poor leaders sacrifice the people to save the numbers  |   [100-atoi.c](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/blob/master/0x05-pointers_arrays_strings/100-atoi.c "100-atoi.c")   |   :heavy_check_mark:   |
+| 11 |  Don't hate the hacker, hate the code  |   [101-keygen.c](https://github.com/rolandoquiroz/holbertonschool-low_level_programming/blob/master/0x05-pointers_arrays_strings/101-keygen.c "101-keygen.c")  |   :heavy_check_mark:   |
 
 Repo:
 -----------
