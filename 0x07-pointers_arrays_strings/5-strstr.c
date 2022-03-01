@@ -1,9 +1,7 @@
 #include "holberton.h"
 /**
  * _strstr - Function that locates a substring.
- *
  * @haystack: char *haystack
- *
  * @needle: char *needle
  *
  * Return: char
