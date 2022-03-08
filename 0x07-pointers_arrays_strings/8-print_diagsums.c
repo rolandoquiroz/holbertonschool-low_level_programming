@@ -2,9 +2,7 @@
 #include <stdio.h>
 /**
  * print_diagsums - Prints the sum of the two diag of a square mtrx of ints.
- *
  * @a: int *a
- *
  * @size: int size
  *
  * Return: void
