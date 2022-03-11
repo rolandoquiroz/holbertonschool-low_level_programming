@@ -3,9 +3,7 @@
 
 /**
  * create_array - Creates an array, and initializes it with a specific char.
- *
  * @size: The size of the array
- *
  * @c: Specific char to initialize the array
  *
  * Return: char, 0
