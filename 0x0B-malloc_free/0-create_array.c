@@ -13,6 +13,7 @@ char *create_array(unsigned int size, char c)
 {
 	unsigned int i;
 	char *str;
+
 	/* malloc() allocate the memory for zise chars */
 	str = (char *)malloc(size * sizeof(char));
 	if (size == 0)
