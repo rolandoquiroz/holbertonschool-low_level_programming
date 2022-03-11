@@ -3,9 +3,7 @@
 
 /**
  * str_concat - Function that concatenates two strings.
- *
  * @s1: String s1 given as a first parameter.
- *
  * @s2: String s2 given as a second parameter.
  *
  * Return: char
