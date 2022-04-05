@@ -6,7 +6,6 @@
  * @index: Index to look for.
  * Return: Bit at index on number.
  */
-
 int get_bit(unsigned long int n, unsigned int index)
 {
 	unsigned int i;
