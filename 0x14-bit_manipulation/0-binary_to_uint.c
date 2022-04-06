@@ -9,7 +9,6 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-
 	unsigned int ans = 0;
 
 	for (; b && *b; b++)
@@ -19,5 +18,4 @@ unsigned int binary_to_uint(const char *b)
 		ans = (ans << 1) + (*b - '0');
 	}
 	return (ans);
-
 }

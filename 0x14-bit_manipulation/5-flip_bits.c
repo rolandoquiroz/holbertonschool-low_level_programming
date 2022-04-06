@@ -14,5 +14,6 @@ unsigned int flip_bits(unsigned long int n, unsigned long int m)
 
 	for (; d; d >>= 1)
 		counter += d & 1;
+
 	return (counter);
 }
