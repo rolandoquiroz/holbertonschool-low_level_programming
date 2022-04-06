@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
- * get_bit - Gives the value of a bit at a given index.
- * @n: Number to evaluate.
- * @index: Index to look for.
- * Return: Bit at index on number.
+ * get_bit - Returns the value of a bit at a given index
+ * @n: number whose bit you want to search
+ * @index: position of the bit, starting from 0
+ *
+ * Return: Bit at index on number
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
