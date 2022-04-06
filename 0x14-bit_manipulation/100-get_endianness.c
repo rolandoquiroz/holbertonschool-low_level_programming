@@ -4,14 +4,12 @@
  * get_endianness - function that checks endianness
  * @void: void
  *
- * Return: 0 or 1
+ * Return: 1 if little endian, 0 if big endian
  */
 int get_endianness(void)
 {
-	int i = 1;
-	char *j = (char *)&i;
+	int value = 1;
+	char *lsb = (char *)&value;
 
-	if (*j)
-		return (1);
-	return (0);
+	return (*lsb ? 1 : 0);
 }
