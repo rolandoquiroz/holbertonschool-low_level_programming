@@ -7,18 +7,14 @@
  * Return: void
  */
 void print_binary(unsigned long int n)
-
 {
-	char bit;
-
-	if (n == 0 || n == 1)
+	if (n == 1 || n == 0)
 	{
 		_putchar(n + '0');
 		return;
 	}
 	print_binary(n >> 1);
-	bit = (n & 1) ? '1' : '0';
-	_putchar(bit);
+	_putchar((n & 1) ? '1' : '0');
 }
 
 
