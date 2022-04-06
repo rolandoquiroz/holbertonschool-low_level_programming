@@ -11,14 +11,9 @@ void print_binary(unsigned long int n)
 {
 	char bit;
 
-	if (n == 0)
+	if (n == 0 || n == 1)
 	{
-		_putchar('0');
-		return;
-	}
-	if (n == 1)
-	{
-		_putchar('1');
+		_putchar(n + '0');
 		return;
 	}
 	print_binary(n >> 1);
