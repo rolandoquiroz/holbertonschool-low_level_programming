@@ -10,10 +10,10 @@
  */
 unsigned int flip_bits(unsigned long int n, unsigned long int m)
 {
-	unsigned long int counter = 0, d = n ^ m;
+	unsigned long int flipped_bits = 0, n_xor_m = n ^ m;
 
-	for (; d; d >>= 1)
-		counter += d & 1;
+	for (; n_xor_m; n_xor_m >>= 1)
+		flipped_bits += n_xor_m & 1;
 
-	return (counter);
+	return (flipped_bits);
 }
