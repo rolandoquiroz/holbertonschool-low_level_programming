@@ -58,13 +58,12 @@ char *_strdup(const char *str)
 }
 
 /**
- * add_node - Function to add a new node at the beginning of list_t
- * @head: Pointer to the pointer to list_t
+ * add_node - Function to add a new node at the beginning of a list_t list
+ * @head: Pointer to the pointer of beginning of the list_t list
  * @str: Pointer to string to copy on to the node
  *
- * Return: address of new element or null if not successful
+ * Return: Address of new element or null if not successful
  */
-
 list_t *add_node(list_t **head, const char *str)
 {
 	list_t *new_node = NULL;

@@ -59,12 +59,11 @@ char *_strdup(const char *str)
 
 /**
  * add_node_end - adds a new node at the end of a list_t list
- * @head: Pointer to the pointer of beginning of list_t
+ * @head: Pointer to the pointer of beginning of the list_t list
  * @str: String to be added
  *
  * Return: New node added
  */
-
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new_node = NULL, *tmp_head = NULL;
