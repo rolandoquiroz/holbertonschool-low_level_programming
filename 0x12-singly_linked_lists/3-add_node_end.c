@@ -2,27 +2,30 @@
 #include <stdlib.h>
 
 /**
- * _strlen - return the long from a string
- *  @s: pointer
- *  Return: number of chars
+ * _strlen - return the lenggth from a string
+ *  @s: pointer to first character of a string
+ *
+ *  Return: number of characters in a string
  */
 unsigned int _strlen(const char *s)
 {
-	unsigned int count = 0;
+	unsigned int len = 0;
 
-	while (s[count] != 0)
+	while (*s)
 	{
-		count++;
+		len++;
+		s++;
 	}
-	return (count);
+
+	return (len);
 }
 
 /**
- * _strdup - Returns a pointer to a copy of the string given as a parameter.
- * @str: String given as a parameter.
- * Return: char
+ * _strdup - Returns a pointer to a copy of the string given as a parameter
+ * @str: String given as a parameter
+ *
+ * Return: Pointer to a copy of str
  */
-
 char *_strdup(const char *str)
 {
 	unsigned int i, leng;
@@ -56,31 +59,33 @@ char *_strdup(const char *str)
 
 /**
  * add_node_end - adds a new node at the end of a list_t list
- * @head: pointer to the pointer of beginning of list_t
- * @str: string to be added
+ * @head: Pointer to the pointer of beginning of list_t
+ * @str: String to be added
+ *
  * Return: New node added
  */
 
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new, *tmp;
-	int len;
+	list_t *new_node = NULL, *tmp_head = NULL;
 
-	new = malloc(sizeof(list_t));
-	if (new == NULL)
+	new_node = (list_t *)malloc(sizeof(list_t));
+	if (new_node == NULL)
 		return (NULL);
-	new->str = _strdup(str);
-len = _strlen(str);
-	new->len = len;
-	new->next = NULL;
-	if ((*head) == NULL)
-		(*head) = new;
+
+	new_node->str = _strdup(str);
+	new_node->len = _strlen(str);
+	new_node->next = NULL;
+
+	if (*head == NULL)
+		*head = new_node;
 	else
 	{
-		tmp = *head;
-		while (tmp->next)
-			tmp = tmp->next;
-		tmp->next = new;
+		tmp_head = *head;
+		while (tmp_head->next)
+			tmp_head = tmp_head->next;
+
+		tmp_head->next = new_node;
 	}
-	return (new);
+	return (new_node);
 }
