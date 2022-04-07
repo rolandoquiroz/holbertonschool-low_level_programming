@@ -66,7 +66,7 @@ char *_strdup(const char *str)
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new_node = NULL, *tmp_head = NULL;
+	list_t *new_node = NULL, *current_node = NULL;
 
 	new_node = (list_t *)malloc(sizeof(list_t));
 	if (new_node == NULL)
@@ -80,11 +80,10 @@ list_t *add_node_end(list_t **head, const char *str)
 		*head = new_node;
 	else
 	{
-		tmp_head = *head;
-		while (tmp_head->next)
-			tmp_head = tmp_head->next;
-
-		tmp_head->next = new_node;
+		current_node = *head;
+		while (current_node->next != NULL)
+			current_node = current_node->next;
+		current_node->next = new_node;
 	}
 
 	return (new_node);
