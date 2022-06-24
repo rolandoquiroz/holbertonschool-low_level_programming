@@ -21,5 +21,6 @@ int main(void)
 	printf("%s\n", ch);
 	rev_string(ch);
 	printf("%s\n", ch);
+
 	return (0);
 }

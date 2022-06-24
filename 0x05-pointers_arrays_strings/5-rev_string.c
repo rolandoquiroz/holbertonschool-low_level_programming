@@ -14,13 +14,13 @@ void rev_string(char *s)
 	r = s;
 
 	while (*r)
-		++r;
-	--r;
+		r++;
+	r--;
 
 	while (s < r)
 	{
 		left = *s, right = *r;
 		*s = right, *r = left;
-		++s, --r;
+		s++, r--;
 	}
 }
