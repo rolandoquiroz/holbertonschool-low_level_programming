@@ -18,6 +18,9 @@ void reverse_array(int *a, int n)
 	while (i < (n - 1))
 		b++, i++;
 
+	if ((n % 2) == 0)
+		i++;
+
 	while (i > (n / 2))
 	{
 		left = *a, right = *b;
