@@ -16,7 +16,10 @@ void reverse_array(int *a, int n)
 
 	i = 0;
 	while (i < (n - 1))
-		b++, i++;
+	{
+		b++;
+		i++;
+	}
 
 	if ((n % 2) == 0)
 		i++;
