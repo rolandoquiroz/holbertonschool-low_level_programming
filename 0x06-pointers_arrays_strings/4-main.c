@@ -34,7 +34,8 @@ int main(void)
 {
 	int a[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 98, 1024, 1337};
 	int m[] = {666, 69, 13, 3};
-	int p[] = {777};
+	int p[] = {27, 12};
+	int z[] = {777};
 
 	print_array(a, sizeof(a) / sizeof(int));
 	reverse_array(a, sizeof(a) / sizeof(int));
@@ -47,6 +48,10 @@ int main(void)
 	print_array(p, sizeof(p) / sizeof(int));
 	reverse_array(p, sizeof(p) / sizeof(int));
 	print_array(p, sizeof(p) / sizeof(int));
+
+	print_array(z, sizeof(z) / sizeof(int));
+	reverse_array(z, sizeof(z) / sizeof(int));
+	print_array(z, sizeof(z) / sizeof(int));
 
 	return (0);
 }
