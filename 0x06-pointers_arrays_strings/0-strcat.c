@@ -1,4 +1,5 @@
 #include "holberton.h"
+
 /**
  * _strcat - Function that concatenates two strings. This function appends the
  * src string to the dest string, overwriting the terminating null byte (\0) at
