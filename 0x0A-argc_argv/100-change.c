@@ -4,14 +4,11 @@
 
 /**
  * main - Prints the minimum number of coins to make change.
- *
  * @argc: Number of arguments supplied
- *
  * @argv: Pointer to array of arguments supplied
  *
  * Return: Int: 0 Success | 1 Error
  */
-
 int main(int argc, char *argv[])
 {
 	int coins = 0, cents;
@@ -21,6 +18,7 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		return (1);
 	}
+
 	cents = atoi(argv[1]);
 	while (cents > 0)
 		if (cents >= 25)
@@ -48,6 +46,8 @@ int main(int argc, char *argv[])
 			cents--;
 			coins++;
 		}
+
 	printf("%d\n", coins);
+
 	return (0);
 }
