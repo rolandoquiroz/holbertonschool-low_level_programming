@@ -24,7 +24,7 @@ int main(int argc, char **argv)
 			if (!isdigit(*(*(argv + i) + j)))
 			{
 				printf("Error\n");
-				return (1);
+				return (EXIT_FAILURE);
 			}
 			j++;
 		}
@@ -33,5 +33,5 @@ int main(int argc, char **argv)
 	}
 	printf("%d\n", s);
 
-	return (0);
+	return (EXIT_SUCCESS);
 }
