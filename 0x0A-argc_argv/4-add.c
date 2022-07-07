@@ -1,7 +1,7 @@
 #include "holberton.h"
 #include <stdlib.h>
-#include <ctype.h>
 #include <stdio.h>
+#include <ctype.h>
 
 /**
  * main - Program that adds positive numbers.
