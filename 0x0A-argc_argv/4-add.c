@@ -20,8 +20,9 @@ int main(int argc, char **argv)
 		j = 0;
 		while (*(*(argv + i) + j) != '\0')
 		{
-			if (!((('0' <= *(*(argv + i) + j)) && (*(*(argv + i) + j) <= '9'))
-				  || (*(*(argv + i) + 0) == '-')))
+			if (!((*(*(argv + i) + 0) == '-')
+				  || (('0' <= *(*(argv + i) + j))
+					  && (*(*(argv + i) + j) <= '9'))))
 			{
 				printf("Error\n");
 				return (EXIT_FAILURE);
