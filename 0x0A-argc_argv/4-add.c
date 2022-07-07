@@ -8,7 +8,7 @@
  * @argc: Number of arguments supplied
  * @argv: Pointer to array of arguments supplied
  *
- * Return: Int: 0 Success | 1 Error
+ * Return: 0 Success | 1 Error
  */
 int main(int argc, char **argv)
 {
@@ -32,6 +32,5 @@ int main(int argc, char **argv)
 		i++;
 	}
 	printf("%d\n", s);
-
 	return (EXIT_SUCCESS);
 }
