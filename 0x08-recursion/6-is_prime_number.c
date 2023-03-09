@@ -10,9 +10,10 @@ int _prime(int m, int n)
 {
 	if (n % m == 0 && n != m)
 		return (0);
-	if (n == m)
+	else if (n == m)
 		return (1);
-	return (_prime(m + 1, n));
+	else
+		return (_prime(m + 1, n));
 }
 
 /**
