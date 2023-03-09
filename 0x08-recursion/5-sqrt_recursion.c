@@ -10,11 +10,11 @@ int _sqrt(int m, int n)
 {
 	if (m * m > n)
 		return (-1);
-	else if (m * m == n)
+	if (m * m == n)
 		return (m);
-	else
-		return (_sqrt(m + 1, n));
+	return (_sqrt(m + 1, n));
 }
+
 /**
  * _sqrt_recursion - Function that returns the natural square root of a number
  * @n: Number to calculate its natural square root
