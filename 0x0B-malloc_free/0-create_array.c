@@ -6,33 +6,23 @@
  * @size: The size of the array
  * @c: Specific char to initialize the array
  *
- * Return: char, 0
+ * Return: pointer to the array, or NULL if it fails
  */
 
 char *create_array(unsigned int size, char c)
 {
-	unsigned int i;
-	char *str;
+	unsigned int i = 0;
+	char *str = NULL;
 
-	/* malloc() allocate the memory for zise chars */
-	str = (char *)malloc(size * sizeof(char));
 	if (size == 0)
-	{
 		return (NULL);
-	}
-	else
-	{
-		if (str == NULL)
-		{
-			return (NULL);
-		}
-		else
-		{
-		for (i = 0; i < size; i++)
-		{
-			str[i] = c;
-		}
-		return (str);
-		}
-	}
+
+	str = (char *)malloc(size * sizeof(char));
+	if (str == NULL)
+		return (NULL);
+
+	for (; i < size; i++)
+		*(str + i) = c;
+
+	return ((char *)str);
 }
