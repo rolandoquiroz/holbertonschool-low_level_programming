@@ -19,10 +19,10 @@ unsigned int _strlen(char *s)
 }
 
 /**
- * string_nconcat - Function that concatenates two strings.
+ * string_nconcat - Function that concatenates two strings partially
  *
- * @s1: char *s1 is the first string to concatenate.
- * @s2: char *s2 is the second string to concatenate.
+ * @s1: char *s1 is the first string to concatenate
+ * @s2: char *s2 is the second string to concatenate
  * @n: partial lenght of s2 to be concatenated.
  *
  * Return: char
