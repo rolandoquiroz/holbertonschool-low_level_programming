@@ -5,40 +5,26 @@
  * _strdup - Returns a pointer to a copy of the string given as a parameter.
  * @str: String given as a parameter.
  *
- * Return: char
+ * Return: a pointer to the duplicated string
  */
 
 char *_strdup(char *str)
 {
-	unsigned int i, leng;
-	char *s;
+	unsigned int i = 0, length = 0;
+	char *s = NULL;
 
 	if (str == NULL)
-	{
 		return (NULL);
-	}
-	else
-	{
-		leng = 0;
-		while (str[leng] != '\0')
-		{
-			leng++;
-		}
 
-		s = (char *)malloc((leng + 1) * sizeof(char));
+	for (; *(str + length) != '\0'; length++)
+		;
 
-		if (s == NULL)
-		{
-			return (NULL);
-		}
-		else
-		{
-			for (i = 0; i < (leng + 1); i++)
-		{
-			s[i] = str[i];
-		}
-		return (s);
-		}
+	s = (char *)malloc((length + 1) * sizeof(char));
+	if (s == NULL)
+		return (NULL);
 
-	}
+	for (; i < (length + 1); i++)
+		*(s + i) = *(str + i);
+
+	return (s);
 }
