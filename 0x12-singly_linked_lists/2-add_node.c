@@ -63,13 +63,10 @@ list_t *add_node(list_t **head, const char *str)
 	new_node->len = _strlen(str);
 	new_node->next = NULL;
 
-	if (*head == NULL)
-		*head = new_node;
-	else
-	{
+	if (*head != NULL)
 		new_node->next = *head;
-		*head = new_node;
-	}
+
+	*head = new_node;
 
 	return (new_node);
 }
