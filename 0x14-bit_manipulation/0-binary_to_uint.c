@@ -25,7 +25,10 @@ unsigned int binary_to_uint(const char *b)
 
 		/* ui = (ui << 1) + (*b - '0'); */
 		/* ui = (ui * (2^1)) + (*b - '0'); */
-		ui = (2 * ui) + (*b - '0');
+		/* ui = (2 * ui) + (*b - '0'); */
+		ui *= 2;
+		if (*b == '1')
+			ui += 1;
 	}
 
 	return (ui);
