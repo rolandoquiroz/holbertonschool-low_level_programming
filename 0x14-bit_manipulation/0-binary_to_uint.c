@@ -11,15 +11,20 @@
  */
 unsigned int binary_to_uint(const char *b)
 {
-	unsigned int ans = 0;
+	unsigned int ui;
 
+	/* if (b == NULL)*/
+	if (b == 0)
+		return (0);
+
+	ui = 0;
 	for (; b && *b; b++)
 	{
 		if (*b < '0' || *b > '1')
 			return (0);
 
-		ans = (ans << 1) + (*b - '0');
+		ui = (ui << 1) + (*b - '0');
 	}
 
-	return (ans);
+	return (ui);
 }
