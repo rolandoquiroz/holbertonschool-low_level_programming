@@ -23,7 +23,9 @@ unsigned int binary_to_uint(const char *b)
 		if (*b < '0' || *b > '1')
 			return (0);
 
-		ui = (ui << 1) + (*b - '0');
+		/* ui = (ui << 1) + (*b - '0'); */
+		/* ui = (ui * (2^1)) + (*b - '0'); */
+		ui = (2 * ui) + (*b - '0');
 	}
 
 	return (ui);
