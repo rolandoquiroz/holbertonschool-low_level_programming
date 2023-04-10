@@ -11,7 +11,6 @@ void exit_98(char *);
 void exit_99(char *);
 void exit_100(int);
 
-
 /**
  * main - copies the contents of one file to another
  * @argc: integer number of arguments
