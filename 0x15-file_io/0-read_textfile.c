@@ -1,6 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
-#include <stdlib.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -12,14 +10,15 @@
  *
  * Return: length of string
  */
-int _strlen(char *s)
+size_t _strlen(char *s)
 {
-	int len = 0;
+	size_t len = 0;
 
 	while (s[len] != '\0')
 		len++;
 	return (len);
 }
+
 /**
  * read_textfile - reads a text file and prints it to the POSIX stdout
  * @filename: the file
@@ -30,27 +29,31 @@ int _strlen(char *s)
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 	int fd;
+	char *buffer = NULL;
 	ssize_t letters_to_write;
-	char *buffer;
 
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
-	buffer = malloc(sizeof(char) * letters);
+
+	buffer = (char *)malloc(letters * sizeof(char));
 	if (buffer == NULL)
 		return (0);
+
 	if (read(fd, buffer, letters) == -1)
 	{
 		free(buffer);
 		return (0);
 	}
-	letters_to_write = _strlen(buffer);
-	letters_to_write = write(STDOUT_FILENO, buffer, letters_to_write);
+
+	letters_to_write = write(STDOUT_FILENO, buffer, _strlen(buffer));
+
 	if (letters_to_write == -1)
 	{
 		free(buffer);
 		return (0);
 	}
+
 	free(buffer);
 	return (close(fd) == -1 ? -1 : letters_to_write);
 }

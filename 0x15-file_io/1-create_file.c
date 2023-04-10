@@ -1,7 +1,4 @@
 #include "holberton.h"
-#include "holberton.h"
-#include <stdio.h>
-#include <stdlib.h>
 #include <unistd.h>
 #include <sys/types.h>
 #include <sys/stat.h>
@@ -19,6 +16,7 @@ int _strlen(char *s)
 
 	while (s[len] != '\0')
 		len++;
+
 	return (len);
 }
 
@@ -38,13 +36,17 @@ int create_file(const char *filename, char *text_content)
 	fd = open(filename, O_CREAT | O_WRONLY | O_TRUNC, 0600);
 	if (fd == -1)
 		return (-1);
+
 	if (text_content == NULL)
 		return (close(fd) == -1 ? -1 : 1);
+
 	len = _strlen(text_content);
+
 	if (write(fd, text_content, len) != len)
 	{
 		close(fd);
 		return (-1);
 	}
+
 	return (close(fd) == -1 ? -1 : 1);
 }
