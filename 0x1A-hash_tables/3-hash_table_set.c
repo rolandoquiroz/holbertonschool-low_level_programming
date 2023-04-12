@@ -17,6 +17,8 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 
 	idx = key_index((const unsigned char *)key, ht->size);
 
+	/* Check duplicates*/
+
 	tmp = ht->array[idx];
 	while (tmp)
 	{
@@ -29,12 +31,14 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 		tmp = tmp->next;
 	}
 
-	new = malloc(sizeof(hash_node_t *));
+	/* Add node */
+
+	new = (hash_node_t *)malloc(sizeof(hash_node_t));
 	if (new == NULL)
 		return (0);
 
-	new->value = strdup(value);
 	new->key = strdup(key);
+	new->value = strdup(value);
 	new->next = NULL;
 
 	if (ht->array[idx] != NULL)
