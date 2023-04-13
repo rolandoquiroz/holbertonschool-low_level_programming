@@ -1,36 +1,39 @@
 #include "lists.h"
 /**
  * add_dnodeint_end - Makes the sum of two numbers
- * @head: First operand
- * @n: Second operand
+ * @head: Pointer to pointer to the first node
+ * @n: Data
  *
- * Return: The sum of the two parameters
+ * Return: The address of the new element, or NULL if it failed
  */
 dlistint_t *add_dnodeint_end(dlistint_t **head, const int n)
 {
-	dlistint_t *new_node;
-	dlistint_t *ptr = *head;
+	dlistint_t *new_node = NULL;
+	dlistint_t *aux = NULL;
+
+	if (head == NULL)
+		return (NULL);
 
 	new_node = malloc(sizeof(dlistint_t));
 	if (new_node == NULL)
 		return (NULL);
 
 	new_node->n = n;
+	new_node->next = NULL;
 
-	if (ptr == NULL)
+	if (*head == NULL)
 	{
-		*head = new_node;
 		new_node->prev = NULL;
-		new_node->next = ptr;
+		*head = new_node;
+
 		return (new_node);
 	}
 
-	while ((ptr != NULL) && (ptr->next != NULL))
-		ptr = ptr->next;
+	for (aux = *head; aux->next != NULL; aux = aux->next)
+		;
 
-	ptr->next = new_node;
-	new_node->prev = ptr;
-	new_node->next = NULL;
+	aux->next = new_node;
+	new_node->prev = aux;
 
 	return (new_node);
 }
