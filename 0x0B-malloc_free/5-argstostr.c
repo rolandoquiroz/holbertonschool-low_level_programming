@@ -3,9 +3,7 @@
 
 /**
  * argstostr - Function that concatenates all the arguments of your program.
- *
  * @ac: int ac is the argument counter.
- *
  * @av: int **av is the argument vector.
  *
  * Return: Returns a pointer to a new str or NULL if it fails
