@@ -2,18 +2,18 @@
 #include <stdlib.h>
 
 /**
- * argstostr - Function that concatenates all the arguments of your program.
- * @ac: int ac is the argument counter.
- * @av: int **av is the argument vector.
+ * argstostr - Concatenates all the arguments of your program
+ * @ac: int ac is the argument counter
+ * @av: int **av is the argument vector
  *
- * Return: Returns a pointer to a new str or NULL if it fails
+ * Return: char *pnt pointer to a new str or NULL if it fails
  */
 
 char *argstostr(int ac, char **av)
 {
 	int arg_c, arg_v, size;
 	int i = 0;
-	char *pnt;
+	char *pnt = NULL;
 
 	if (ac == 0 || av == NULL)
 		return (NULL);
@@ -27,7 +27,7 @@ char *argstostr(int ac, char **av)
 		size++;
 	}
 
-	pnt = malloc(size * sizeof(char));
+	pnt = (char *)malloc(size * sizeof(char));
 
 	if (pnt == NULL)
 		return (NULL);
@@ -48,5 +48,6 @@ char *argstostr(int ac, char **av)
 	}
 	i++;
 	pnt[i] = '\0';
-	return (pnt);
+
+	return ((char *)pnt);
 }
