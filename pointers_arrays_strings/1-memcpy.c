@@ -4,7 +4,7 @@
  * _memcpy - Function that copies memory area.
  *           The _memcpy() function copies n bytes
  *           from memory area src to memory area dest.
- * 
+ *
  * @dest: char *dest
  * @src: char *src
  * @n: unsigned int n
