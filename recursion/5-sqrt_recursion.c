@@ -5,15 +5,16 @@
  * @m: Candidate to be the natural square root of n
  * @n: Number to calculate its natural square root
  *
- * Return: Natural square root of n, or -1 if n does not have natural square root
+ * Return: Natural square root of n,
+ *			or -1 if n does not have natural square root
  */
 int _sqrt(int m, int n)
 {
-    if (m * m > n)
-        return (-1);
-    if (m * m == n)
-        return (m);
-    return (_sqrt(m + 1, n));
+	if (m * m > n)
+		return (-1);
+	if (m * m == n)
+		return (m);
+	return (_sqrt(m + 1, n));
 }
 
 /**
@@ -24,9 +25,9 @@ int _sqrt(int m, int n)
  */
 int _sqrt_recursion(int n)
 {
-    if (n < 0)
-        return (-1);
-    if (n == 0)
-        return (0);
-    return (_sqrt(1, n));
+	if (n < 0)
+		return (-1);
+	if (n == 0)
+		return (0);
+	return (_sqrt(1, n));
 }
