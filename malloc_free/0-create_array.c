@@ -21,7 +21,7 @@ char *create_array(unsigned int size, char c)
 		return (NULL);
 
 	ans = str;
-	for (; size-- > 0 ;)
+	while (size-- > 0)
 		*str++ = c;
 
 	return (ans);
