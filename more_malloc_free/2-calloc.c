@@ -3,12 +3,14 @@
 
 /**
  * _calloc - Function that allocates memory for an array, using malloc.
- *
+ *			The _calloc function allocates memory for an array of nmemb elements
+ *			of size bytes each and returns a pointer to the allocated memory.
+ *			The memory is set to zero
  * @nmemb: array to be allocated.
- *
  * @size: size of the array.
  *
- * Return: void
+ * Return:  If nmemb or size is 0, then _calloc returns NULL,
+ *			If malloc fails, then _calloc returns NULL
  */
 
 void *_calloc(unsigned int nmemb, unsigned int size)
