@@ -13,7 +13,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *puppie = NULL;
-	int size_of_char = 0, size_of_name = 0, size_of_owner = 0, i;
+	unsigned int size_of_char = 0, size_of_name = 0, size_of_owner = 0, i;
 
 	if (name == NULL || owner == NULL)
 		return (NULL);
