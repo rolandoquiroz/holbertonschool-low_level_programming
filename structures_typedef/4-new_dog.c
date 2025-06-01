@@ -13,10 +13,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *puppie = NULL;
-	int size_of_name = 0, size_of_owner = 0, i;
-
-	size_of_name = sizeof(name);
-	size_of_owner = sizeof(owner);
+	int size_of_char = 0, size_of_name = 0, size_of_owner = 0, i;
 
 	if (name == NULL || owner == NULL)
 		return (NULL);
@@ -24,15 +21,19 @@ dog_t *new_dog(char *name, float age, char *owner)
 	puppie = malloc(sizeof(dog_t));
 	if (puppie == NULL)
 		return (NULL);
+	
+	size_of_char = sizeof(char);
 
-	puppie->name = malloc(size_of_name * sizeof(char));
+	size_of_name = sizeof(name);
+	puppie->name = malloc(size_of_name * size_of_char);
 	if (puppie->name == NULL)
 	{
 		free(puppie);
 		return (NULL);
 	}
 
-	puppie->owner = malloc(size_of_owner * sizeof(char));
+	size_of_owner = sizeof(owner);
+	puppie->owner = malloc(size_of_owner * size_of_char);
 	if (puppie->owner == NULL)
 	{
 		free(puppie->name);
