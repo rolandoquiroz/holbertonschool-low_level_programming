@@ -2,6 +2,22 @@
 #include <stdio.h>
 #include <stdlib.h>
 
+
+/**
+ * _strlen - function that returns the length of a string.
+ * @s: char *s String to be processed
+ * Return: the length of a string
+ */
+int _strlen(char *s)
+{
+	int len;
+
+	len = 0;
+	while (*s)
+		s++, len++;
+	return (len);
+}
+
 /**
  * new_dog - Function that creates a new type dog struct.
  * @name: Parameter name.
@@ -13,7 +29,7 @@
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *puppie = NULL;
-	unsigned int size_of_char = 0, size_of_name = 0, size_of_owner = 0, i;
+	unsigned int size_of_char = 0, len_of_name = 0, len_of_owner = 0, i;
 
 	if (name == NULL || owner == NULL)
 		return (NULL);
@@ -24,16 +40,16 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	size_of_char = sizeof(char);
 
-	size_of_name = sizeof(name);
-	puppie->name = malloc(size_of_name * size_of_char);
+	len_of_name = sizeof(name);
+	puppie->name = malloc((len_of_name + 1) * size_of_char);
 	if (puppie->name == NULL)
 	{
 		free(puppie);
 		return (NULL);
 	}
 
-	size_of_owner = sizeof(owner);
-	puppie->owner = malloc(size_of_owner * size_of_char);
+	len_of_owner = sizeof(owner);
+	puppie->owner = malloc((len_of_owner + 1) * size_of_char);
 	if (puppie->owner == NULL)
 	{
 		free(puppie->name);
@@ -41,12 +57,12 @@ dog_t *new_dog(char *name, float age, char *owner)
 		return (NULL);
 	}
 
-	for (i = 0; i < size_of_name; i++)
+	for (i = 0; i < len_of_name + 1; i++)
 		puppie->name[i] = name[i];
 
 	puppie->age = age;
 
-	for (i = 0; i < size_of_owner; i++)
+	for (i = 0; i < len_of_owner + 1; i++)
 		puppie->owner[i] = owner[i];
 
 	return (puppie);
