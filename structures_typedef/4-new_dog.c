@@ -21,7 +21,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	puppie = malloc(sizeof(dog_t));
 	if (puppie == NULL)
 		return (NULL);
-	
+
 	size_of_char = sizeof(char);
 
 	size_of_name = sizeof(name);
