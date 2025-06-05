@@ -1,5 +1,6 @@
 #include "function_pointers.h"
 #include <stdlib.h>
+
 /**
  * array_iterator - Executes a func given as a param on each element of an arr
  * @array:Array to be processed
@@ -8,6 +9,7 @@
  *
  * Return:nothing
  */
+
 void array_iterator(int *array, int size, void (*action)(int))
 {
 	if (array && size && action)
