@@ -1,6 +1,6 @@
 #include "3-calc.h"
 #include <stdio.h>
-#include <stdlib.h>
+
 /**
  * main - main function.
  * @argc: count of input parameters
@@ -9,9 +9,7 @@
  */
 int main(int argc, char **argv)
 {
-	int number_1 = 0;
-	int number_2 = 0;
-	int ans = 0;
+	int number_1 = 0, number_2 = 0, ans = 0;
 
 	if (argc != 4)
 	{
@@ -24,5 +22,6 @@ int main(int argc, char **argv)
 
 	ans = (*get_op_func(argv[2]))(number_1, number_2);
 	printf("%d\n", ans);
+
 	return (0);
 }
