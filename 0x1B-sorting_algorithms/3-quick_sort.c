@@ -1,61 +1,78 @@
 #include "sort.h"
 
 /**
- * partition - Partition the array
- * @a: Array to be partitioned
- * @l: Starting point of array
- * @h: Ending point of array
- * @size: size of the array
+ * swap - Swap two integers in an array
+ * @a: First integer
+ * @b: Second integer
  *
- * Return: pivot value
+ * Return: nothing
  */
-
-int partition(int *a, ssize_t l, ssize_t h, size_t size)
+void swap(int *a, int *b)
 {
-	ssize_t i, j;
-	int piv, tmp;
+	int temp;
 
-	piv = a[h];
-	i = l - 1;
-	for (j = l; j < h; j++)
+	if (a != b && *a != *b)
 	{
-		if (a[j] <= piv)
+		temp = *a;
+		*a = *b;
+		*b = temp;
+	}
+}
+
+/**
+ * lomuto_partition - Lomuto partition scheme
+ * @array: Array to be partitioned
+ * @low: Starting index
+ * @high: Ending index
+ * @size: Total size (for print)
+ *
+ * Return: Final pivot index
+ */
+int lomuto_partition(int *array, ssize_t low, ssize_t high, size_t size)
+{
+	int pivot = array[high];
+	ssize_t i = low - 1, j;
+
+	for (j = low; j < high; j++)
+	{
+		if (array[j] <= pivot)
 		{
 			i++;
-			tmp = a[i];
-			a[i] = a[j];
-			a[j] = tmp;
-			if (a[i] != a[j])
-				print_array(a, size);
+			if (i != j)
+			{
+				swap(&array[i], &array[j]);
+				print_array(array, size);
+			}
 		}
-
 	}
-	tmp = a[i + 1];
-	a[i + 1] = a[h];
-	a[h] = tmp;
-	if (a[i + 1] != a[h])
-		print_array(a, size);
+
+	if (i + 1 != high)
+	{
+		swap(&array[i + 1], &array[high]);
+		print_array(array, size);
+	}
+
 	return (i + 1);
 }
 
 /**
  * quicksort - Quick sort recursive function and create pivots
- * @arr: Array to be sorted
+ * @array: Array to be sorted
  * @low: bottom index of sorting array
  * @high: top index of sorting array
  * @size: Size of the array
  *
  * Return: void
  */
-void quicksort(int *arr, ssize_t low, ssize_t high, size_t size)
+void quicksort(int *array, ssize_t low, ssize_t high, size_t size)
 {
 	int pivot;
 
 	if (low < high)
 	{
-		pivot = partition(arr, low, high, size);
-		quicksort(arr, low, pivot - 1, size);
-		quicksort(arr, pivot + 1, high, size);
+		pivot = lomuto_partition(array, low, high, size);
+		quicksort(array, low, pivot - 1, size);
+		quicksort(array, pivot + 1, high, size);
 	}
 }
 
@@ -70,5 +87,6 @@ void quick_sort(int *array, size_t size)
 {
 	if ((array == NULL) || (size < 2))
 		return;
+
 	quicksort(array, 0, size - 1, size);
 }
