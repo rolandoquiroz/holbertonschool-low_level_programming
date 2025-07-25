@@ -11,12 +11,9 @@ void swap(int *a, int *b)
 {
 	int temp;
 
-	if (a != b && *a != *b)
-	{
-		temp = *a;
-		*a = *b;
-		*b = temp;
-	}
+	temp = *a;
+	*a = *b;
+	*b = temp;
 }
 
 /**
@@ -38,7 +35,7 @@ int lomuto_partition(int *array, ssize_t low, ssize_t high, size_t size)
 		if (array[j] <= pivot)
 		{
 			i++;
-			if (i != j)
+			if (i != j && array[i] != array[j])
 			{
 				swap(&array[i], &array[j]);
 				print_array(array, size);
@@ -46,7 +43,7 @@ int lomuto_partition(int *array, ssize_t low, ssize_t high, size_t size)
 		}
 	}
 
-	if (i + 1 != high)
+	if (i + 1 != high && array[i + 1] != array[high])
 	{
 		swap(&array[i + 1], &array[high]);
 		print_array(array, size);
